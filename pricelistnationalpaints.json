@@ -1,0 +1,3231 @@
+{
+  "document_source": "National Paints Price List",
+  "effective_date": "2024-08-01",
+  "currency": "AED",
+  "notes": [
+    "This price list supersedes all previous issued, and the prices may change without notice.",
+    "All Prices in AED and applicable with VAT.",
+    "The circular dated August 02, 2024 contains a subset of these products with matching prices."
+  ],
+  "product_categories": [
+    {
+      "category_name": "Decorative Coatings",
+      "subcategories": [
+        {
+          "subcategory_name": "Water Based (Primers & Emulsions)",
+          "products": [
+            {
+              "product_code": "A119",
+              "product_name": "National Acrylic Primer (W.B.)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 80.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 22.00 }
+              ]
+            },
+            {
+              "product_code": "A014",
+              "product_name": "National PVA Primer Sealer - Clear",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 76.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 19.00 }
+              ]
+            },
+            {
+              "product_code": "A015",
+              "product_name": "National PVA Primer White for Masonry – White",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 60.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 16.00 }
+              ]
+            },
+            {
+              "product_code": "A015",
+              "product_name": "National PVA Primer White for Masonry – APS",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 80.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 23.00 }
+              ]
+            },
+            {
+              "product_code": "A118",
+              "product_name": "National Penetrating Sealer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 100.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 24.00 }
+              ]
+            },
+            {
+              "product_code": "A017",
+              "product_name": "National Stucco Filler",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 62.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 17.00 },
+                { "size": "25 kg (Plastic Pail)", "price": 56.00 }
+              ]
+            },
+            {
+              "product_code": "PA0170080025K",
+              "product_name": "National Stucco Filler - Plastic Bag (Projects Only)",
+              "prices": [{ "size": "25 kg", "price": 48.00 }]
+            },
+            {
+              "product_code": "A164",
+              "product_name": "National Block Filler",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 135.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 32.00 }
+              ]
+            },
+            {
+              "product_code": "A163",
+              "product_name": "National Joint Filler",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 160.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 37.00 }
+              ]
+            },
+            {
+              "product_code": "A163CR",
+              "product_name": "National Crack Filler",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 155.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 36.00 }
+              ]
+            },
+            {
+              "product_code": "A001",
+              "product_name": "National Plastic Emulsion - Metal Drum (White / Off-White)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 58.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 16.00 }
+              ]
+            },
+            {
+              "product_code": "A001",
+              "product_name": "National Plastic Emulsion - Metal Drum (Standard Colors)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 63.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 18.00 }
+              ]
+            },
+            {
+              "product_code": "A001",
+              "product_name": "National Plastic Emulsion - Plastic Pail (White/Off-White)",
+              "prices": [{ "size": "20 kg", "price": 54.00 }]
+            },
+            {
+              "product_code": "A179",
+              "product_name": "National Nice Emulsion",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 120.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 29.00 }
+              ]
+            },
+            {
+              "product_code": "A002",
+              "product_name": "National Matt Emulsion (White / Off-White)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 135.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 33.00 }
+              ]
+            },
+            {
+              "product_code": "A002",
+              "product_name": "National Matt Emulsion (Standard Colors)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 140.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 35.00 }
+              ]
+            },
+            {
+              "product_code": "A403",
+              "product_name": "National Matt Emulsion Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 180.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 40.00 }
+              ]
+            },
+            {
+              "product_code": "A160",
+              "product_name": "National Super Matt Emulsion",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 220.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 50.00 }
+              ]
+            },
+            {
+              "product_code": "A162",
+              "product_name": "National Super Acrylic Emulsion",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 165.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 38.00 }
+              ]
+            },
+            {
+              "product_code": "A155",
+              "product_name": "National Eggshell Emulsion Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 175.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 40.00 }
+              ]
+            },
+            {
+              "product_code": "A003",
+              "product_name": "National Eggshell Emulsion Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 195.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 46.00 }
+              ]
+            },
+            {
+              "product_code": "A226",
+              "product_name": "National Eggshell Emulsion Semi-gloss",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 53.00 }
+              ]
+            },
+            {
+              "product_code": "A404",
+              "product_name": "National Latex Emulsion Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 115.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 27.00 }
+              ]
+            },
+            {
+              "product_code": "A474",
+              "product_name": "National Latex Emulsion Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 195.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 45.00 }
+              ]
+            },
+            {
+              "product_code": "A467",
+              "product_name": "National Action Emulsion",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 100.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 25.00 }
+              ]
+            },
+            {
+              "product_code": "A308",
+              "product_name": "National Acrylic Eggshell Gold - Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 320.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 71.00 }
+              ]
+            },
+            {
+              "product_code": "A568",
+              "product_name": "National Acrylic Eggshell Gold - Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 265.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 58.00 }
+              ]
+            },
+            {
+              "product_code": "A134",
+              "product_name": "National Gloss Emulsion",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 275.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 62.00 }
+              ]
+            },
+            {
+              "product_code": "A161",
+              "product_name": "National Weather Resist Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 54.00 }
+              ]
+            },
+            {
+              "product_code": "A128",
+              "product_name": "National Weather Resist Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 250.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 56.00 }
+              ]
+            },
+            {
+              "product_code": "A295",
+              "product_name": "National Acrylic Weather Resist – Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 275.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 }
+              ]
+            },
+            {
+              "product_code": "A294",
+              "product_name": "National Acrylic Weather Resist – Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 275.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 }
+              ]
+            },
+            {
+              "product_code": "A091",
+              "product_name": "National Acryl Emulsion – I",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 95.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 23.00 }
+              ]
+            },
+            {
+              "product_code": "A069",
+              "product_name": "National Acryl Emulsion – II",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 185.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 42.00 }
+              ]
+            },
+            {
+              "product_code": "A313",
+              "product_name": "National Silicone Emulsion Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 400.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 88.00 }
+              ]
+            },
+            {
+              "product_code": "A306",
+              "product_name": "National Silicone Emulsion Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 380.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 85.00 }
+              ]
+            },
+            {
+              "product_code": "A299",
+              "product_name": "National Defendem (Weather Shield)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 340.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 76.00 }
+              ]
+            },
+            {
+              "product_code": "A278",
+              "product_name": "National Protect Seal Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 260.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 }
+              ]
+            },
+            {
+              "product_code": "A384",
+              "product_name": "National Protect Seal Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 290.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 65.00 }
+              ]
+            },
+            {
+              "product_code": "A315",
+              "product_name": "National Eggshell Antifungal Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 215.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 49.00 }
+              ]
+            },
+            {
+              "product_code": "A314",
+              "product_name": "National Eggshell Antifungal Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 230.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Trust Products",
+          "products": [
+            {
+              "product_code": "A361",
+              "product_name": "Trust Hygienic Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 325.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 72.00 }
+              ]
+            },
+            {
+              "product_code": "A362",
+              "product_name": "Trust Hygienic Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 340.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 75.00 }
+              ]
+            },
+            {
+              "product_code": "A475",
+              "product_name": "Trust Anti-stain",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 365.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 79.00 }
+              ]
+            },
+            {
+              "product_code": "A541",
+              "product_name": "Trust Odorless - Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 260.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 59.00 }
+              ]
+            },
+            {
+              "product_code": "A540",
+              "product_name": "Trust Odorless - Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 290.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 62.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Alkyd Based Products",
+          "products": [
+            {
+              "product_code": "A009",
+              "product_name": "National Red Oxide Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 135.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 32.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 9.50 }
+              ]
+            },
+            {
+              "product_code": "A009",
+              "product_name": "National Grey Oxide Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 200.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 46.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A087",
+              "product_name": "National Wood Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 210.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 46.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A007",
+              "product_name": "National Synthetic Undercoat",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 210.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 46.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A006",
+              "product_name": "National Flat/Matt Synthetic Enamel",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A004",
+              "product_name": "National Synthetic Enamel G-I Gloss",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A178",
+              "product_name": "National Synthetic Enamel G-I Semi-Gloss",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A005",
+              "product_name": "National Synthetic Enamel G-II (Fast Drying)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 260.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 56.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A180",
+              "product_name": "National Flat/Matt Synthetic Enamel G-II",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 260.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 56.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A078",
+              "product_name": "National Eco Enamel (Lead Free Enamel)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 330.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 73.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 21.00 }
+              ]
+            },
+            {
+              "product_code": "A153",
+              "product_name": "National Wood Stain (Alkyd Based)",
+              "prices": [
+                { "size": "3.6 Ltr (Gallon)", "price": 65.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 20.00 }
+              ]
+            },
+            {
+              "product_code": "A008",
+              "product_name": "National Synthetic Varnish Clear",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 235.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 53.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A449",
+              "product_name": "National Color Varnish",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 250.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 55.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 16.00 }
+              ]
+            },
+            {
+              "product_code": "A011",
+              "product_name": "National Aluminum Paint",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 235.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 53.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A105",
+              "product_name": "National Camouflage Paint",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 290.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 63.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 19.00 }
+              ]
+            },
+            {
+              "product_code": "A030",
+              "product_name": "National Hammer Finish",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 275.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 17.00 }
+              ]
+            },
+            {
+              "product_code": "A030",
+              "product_name": "National Hammer Finish (Gold, Red Gold and Dark Bronze)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 375.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 80.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 23.00 }
+              ]
+            },
+            {
+              "product_code": "A006BB",
+              "product_name": "National Black Board Paint",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A006BBGR",
+              "product_name": "National Green Board Paint",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Textured Coatings",
+          "products": [
+            {
+              "product_code": "A096",
+              "product_name": "National Tex Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 120.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 30.00 }
+              ]
+            },
+            {
+              "product_code": "A367",
+              "product_name": "National Acrylic Tex Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 140.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 33.00 }
+              ]
+            },
+            {
+              "product_code": "A022",
+              "product_name": "National Super Finetex",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 190.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 44.00 }
+              ]
+            },
+            {
+              "product_code": "A070",
+              "product_name": "National Minitex",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 140.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 34.00 }
+              ]
+            },
+            {
+              "product_code": "A020",
+              "product_name": "National Swiss Sandtex",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 135.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 33.00 }
+              ]
+            },
+            {
+              "product_code": "A019",
+              "product_name": "National Tex (Heavy Tex)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 120.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 30.00 }
+              ]
+            },
+            {
+              "product_code": "A152",
+              "product_name": "National Tex without Marble Chips",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 170.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 39.00 }
+              ]
+            },
+            {
+              "product_code": "A018",
+              "product_name": "National Graffio Décor (3mm)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 90.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 23.00 }
+              ]
+            },
+            {
+              "product_code": "A605",
+              "product_name": "National Graffio Décor Small Stone (2mm)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 90.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 23.00 }
+              ]
+            },
+            {
+              "product_code": "A230",
+              "product_name": "National Synplast",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 140.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 32.00 }
+              ]
+            },
+            {
+              "product_code": "A337",
+              "product_name": "National Syntex",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 130.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 31.00 }
+              ]
+            },
+            {
+              "product_code": "A171",
+              "product_name": "National Shield Fine Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 250.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 55.00 }
+              ]
+            },
+            {
+              "product_code": "A172",
+              "product_name": "National Shield Tex Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 245.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 54.00 }
+              ]
+            },
+            {
+              "product_code": "A473",
+              "product_name": "National Shield Tex Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 206.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 43.00 }
+              ]
+            },
+            {
+              "product_code": "A323",
+              "product_name": "National Shield Long life - Traditional Tex",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 230.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 }
+              ]
+            },
+            {
+              "product_code": "A244",
+              "product_name": "National Shield Long life - Antique Tex",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 230.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 }
+              ]
+            },
+            {
+              "product_code": "A322",
+              "product_name": "National Shield Long life - Classic Tex",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 230.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 }
+              ]
+            },
+            {
+              "product_code": "A378",
+              "product_name": "National Shield Tex Fine",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 250.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 56.00 }
+              ]
+            },
+            {
+              "product_code": "A379",
+              "product_name": "National Shield Tex Medium",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 245.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 55.00 }
+              ]
+            },
+            {
+              "product_code": "A371",
+              "product_name": "National Shield Antique Tex H.B",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 185.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 44.00 }
+              ]
+            },
+            {
+              "product_code": "A372",
+              "product_name": "National Shield Antique Tex H.B. Fine",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 210.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 50.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Shield Products",
+          "products": [
+            {
+              "product_code": "A374",
+              "product_name": "National Shield Tex Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 130.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 31.00 }
+              ]
+            },
+            {
+              "product_code": "A170",
+              "product_name": "National Shield Ultra Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 275.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 62.00 }
+              ]
+            },
+            {
+              "product_code": "A415",
+              "product_name": "National Shield Ultra Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 210.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 44.00 }
+              ]
+            },
+            {
+              "product_code": "A166",
+              "product_name": "National Shield Topcoat Gloss",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 340.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 77.00 }
+              ]
+            },
+            {
+              "product_code": "A165",
+              "product_name": "National Shield Topcoat Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 290.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 64.00 }
+              ]
+            },
+            {
+              "product_code": "A363",
+              "product_name": "National Shield Topcoat Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 270.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 61.00 }
+              ]
+            },
+            {
+              "product_code": "A368",
+              "product_name": "National Shield Topcoat Semi-Gloss",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 330.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 75.00 }
+              ]
+            },
+            {
+              "product_code": "A316",
+              "product_name": "National Shield Exterior Filler (Water Base)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 150.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 36.00 }
+              ]
+            },
+            {
+              "product_code": "A330",
+              "product_name": "National Shield Exterior Filler (Solvent Base)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 230.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 }
+              ]
+            },
+            {
+              "product_code": "A386",
+              "product_name": "National Shield Super Durable Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 650.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 135.00 }
+              ]
+            },
+            {
+              "product_code": "A385",
+              "product_name": "National Shield Super Durable Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 725.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 155.00 }
+              ]
+            },
+            {
+              "product_code": "A376",
+              "product_name": "National Shield Alkali Resistant Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 115.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 29.00 }
+              ]
+            },
+            {
+              "product_code": "A377",
+              "product_name": "National Shield Thermal Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 120.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 30.00 }
+              ]
+            },
+            {
+              "product_code": "A380",
+              "product_name": "National Shield Thermal",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 480.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 144.00 }
+              ]
+            },
+            {
+              "product_code": "A410",
+              "product_name": "National Shield Extreme Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 290.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 65.00 }
+              ]
+            },
+            {
+              "product_code": "A408",
+              "product_name": "National Shield Extreme Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 350.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 78.00 }
+              ]
+            },
+            {
+              "product_code": "A375",
+              "product_name": "National Shield Penetrating Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 205.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 47.00 }
+              ]
+            },
+            {
+              "product_code": "A606",
+              "product_name": "National Shield Carbo Matt",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 260.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 }
+              ]
+            },
+            {
+              "product_code": "A607",
+              "product_name": "National Shield Carbo Silk",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 270.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 62.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Tile Coatings",
+          "products": [
+            {
+              "product_code": "A021",
+              "product_name": "National Nutex (Spray Texture)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 116.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 28.00 }
+              ]
+            },
+            {
+              "product_code": "A122",
+              "product_name": "National Texo Compound",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 90.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 23.00 }
+              ]
+            },
+            {
+              "product_code": "A060",
+              "product_name": "National Acrylic Rock Topcoat",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 300.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 65.00 }
+              ]
+            },
+            {
+              "product_code": "A033",
+              "product_name": "Nationalthane Topcoat (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 620.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 135.00 }
+              ]
+            },
+            {
+              "product_code": "A093",
+              "product_name": "National Polyurethane Topcoat (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 520.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 125.00 }
+              ]
+            },
+            {
+              "product_code": "A063",
+              "product_name": "National Interguard H.B. (Spray Texture) (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 410.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 90.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Stone Finish",
+          "products": [
+            {
+              "product_code": "A214",
+              "product_name": "National Stone Acrylic Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 125.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 28.00 }
+              ]
+            },
+            {
+              "product_code": "A489",
+              "product_name": "National Acrylic Stone Finish - Small Stone",
+              "prices": [
+                { "size": "23 Kg (Drum)", "price": 205.00 },
+                { "size": "5 kg (Gallon)", "price": 48.00 }
+              ]
+            },
+            {
+              "product_code": "A490",
+              "product_name": "National Acrylic Stone Finish - Medium Stone",
+              "prices": [
+                { "size": "23 Kg (Drum)", "price": 210.00 },
+                { "size": "5 Kg (Gallon)", "price": 49.00 }
+              ]
+            },
+            {
+              "product_code": "A491",
+              "product_name": "National Acrylic Stone Finish - Large Stone",
+              "prices": [
+                { "size": "23 Kg (Drum)", "price": 215.00 },
+                { "size": "5 Kg (Gallon)", "price": 50.00 }
+              ]
+            },
+            {
+              "product_code": "A492",
+              "product_name": "National Acrylic Stone Finish - Clear",
+              "prices": [
+                { "size": "18 ltr (Drum)", "price": 195.00 },
+                { "size": "3.6 ltr (Gallon)", "price": 45.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Spray Plaster",
+          "products": [
+            {
+              "product_code": "A167",
+              "product_name": "National Spray Plaster Fine",
+              "prices": [
+                { "size": "25 kg / Bag", "price": 31.50 },
+                { "size": "Ton", "price": 1260.00 }
+              ]
+            },
+            {
+              "product_code": "A168",
+              "product_name": "National Spray Plaster Medium",
+              "prices": [
+                { "size": "25 kg / Bag", "price": 30.00 },
+                { "size": "Ton", "price": 1200.00 }
+              ]
+            },
+            {
+              "product_code": "A169",
+              "product_name": "National Spray Plaster Coarse",
+              "prices": [
+                { "size": "25 kg / Bag", "price": 26.00 },
+                { "size": "Ton", "price": 1040.00 }
+              ]
+            },
+            {
+              "product_code": "A419",
+              "product_name": "National Spray Plaster Exterior Coarse",
+              "prices": [
+                { "size": "25 kg / Bag", "price": 37.50 },
+                { "size": "Ton", "price": 1500.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Water Proofing",
+          "products": [
+            {
+              "product_code": "A023",
+              "product_name": "National Polydex (Water Base)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 150.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 34.00 }
+              ]
+            },
+            {
+              "product_code": "A089",
+              "product_name": "National Bitumen Emulsion Paint",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 105.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 25.00 }
+              ]
+            },
+            {
+              "product_code": "A309",
+              "product_name": "National Rubberized Bitumen Emulsion",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 115.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 28.00 }
+              ]
+            },
+            {
+              "product_code": "A089",
+              "product_name": "National Bitumen (Solvent Base)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 145.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 33.00 }
+              ]
+            },
+            {
+              "product_code": "A106",
+              "product_name": "National Hypalon (Solvent Base)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 400.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 85.00 }
+              ]
+            },
+            {
+              "product_code": "A280",
+              "product_name": "National Water Repellent (Water Base)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 155.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 38.00 }
+              ]
+            },
+            {
+              "product_code": "A247",
+              "product_name": "National Water Repellent (Solvent Base)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 54.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Floor Coatings",
+          "products": [
+            {
+              "product_code": "A046",
+              "product_name": "National Guard Primer for Cement Clear (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 370.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 80.00 }
+              ]
+            },
+            {
+              "product_code": "A047",
+              "product_name": "National Guard Epoxy Flooring Topcoat (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 500.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 108.00 }
+              ]
+            },
+            {
+              "product_code": "A335",
+              "product_name": "National Guard Epoxy Flooring Primer S.F. (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 515.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 110.00 }
+              ]
+            },
+            {
+              "product_code": "A336",
+              "product_name": "National Guard Epoxy Flooring Topcoat S.F. (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 620.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 135.00 }
+              ]
+            },
+            {
+              "product_code": "A333",
+              "product_name": "National Guard Heavy Duty Epoxy Floor Screed (A+B+C)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 800.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 170.00 }
+              ]
+            },
+            {
+              "product_code": "A277",
+              "product_name": "National Guard Flexible Epoxy Flooring Topcoat S.F. (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 715.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 112.00 }
+              ]
+            },
+            {
+              "product_code": "A334",
+              "product_name": "National Guard Epoxy Glasscote (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 850.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 180.00 }
+              ]
+            },
+            {
+              "product_code": "A297",
+              "product_name": "National Guard Epoxy Filler S.F. (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 370.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 82.00 }
+              ]
+            },
+            {
+              "product_code": "A221",
+              "product_name": "National Aqua Epoxy Primer (A+B) (Water Based Epoxy)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 775.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 165.00 }
+              ]
+            },
+            {
+              "product_code": "A220",
+              "product_name": "National Aqua Epoxy Topcoat (A+B) (Water Based Epoxy)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 785.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 170.00 }
+              ]
+            },
+            {
+              "product_code": "A341",
+              "product_name": "National Aqua Acrylic Flooring Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 50.00 }
+              ]
+            },
+            {
+              "product_code": "A290",
+              "product_name": "National Aqua Acrylic Flooring Topcoat",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 300.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 62.00 }
+              ]
+            },
+            {
+              "product_code": "A304",
+              "product_name": "National Aqua Polyurethane Flooring Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 350.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 75.00 }
+              ]
+            },
+            {
+              "product_code": "A304",
+              "product_name": "National Aqua Polyurethane Flooring Topcoat",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 350.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 75.00 }
+              ]
+            },
+            {
+              "product_code": "A296",
+              "product_name": "National Aliphatic Polyurethane H.B. (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 536.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 125.00 }
+              ]
+            },
+            {
+              "product_code": "A459",
+              "product_name": "National Polyurethane Flooring S.F. Universal",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 570.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 153.00 }
+              ]
+            },
+            {
+              "product_code": "A329",
+              "product_name": "National Polyurethane Flooring H.B. (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 650.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 140.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Road Marking Paints",
+          "products": [
+            {
+              "product_code": "A051",
+              "product_name": "National Road Marker (White, Black, Red & Yellow)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 55.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 16.00 }
+              ]
+            },
+            {
+              "product_code": "A068",
+              "product_name": "National Fluorescent Paint",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 900.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 200.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 55.00 }
+              ]
+            },
+            {
+              "product_code": "A243",
+              "product_name": "National Acrylic Road Marking",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 315.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 69.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 19.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "N.C. & P.U. Wood Furniture Finishes",
+          "products": [
+            {
+              "product_code": "A025",
+              "product_name": "National N.C. Primer Surfacer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 260.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 54.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A028",
+              "product_name": "National N.C. Sanding Sealer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 228.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 48.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 13.00 }
+              ]
+            },
+            {
+              "product_code": "A026",
+              "product_name": "National N.C. Putty",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 235.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 50.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A127",
+              "product_name": "National N.C. Wood Filler",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 257.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 55.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A024",
+              "product_name": "National N.C. Auto Lacquer Topcoat White & Black (Gloss, Semi-Gloss, Matt)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 280.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 58.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 16.50 }
+              ]
+            },
+            {
+              "product_code": "A024",
+              "product_name": "National N.C. Auto Lacquer Topcoat Standard colors / NP shade card (Gloss, Semi-Gloss, Matt)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 310.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 64.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 18.00 }
+              ]
+            },
+            {
+              "product_code": "A024V",
+              "product_name": "National N.C. Auto Lacquer Topcoat - Violet",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 350.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 72.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 20.00 }
+              ]
+            },
+            {
+              "product_code": "A024G",
+              "product_name": "National N.C. Auto Lacquer Topcoat - Gold",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 400.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 90.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 27.00 }
+              ]
+            },
+            {
+              "product_code": "A027",
+              "product_name": "National N.C. Lacquer Clear (Gloss, Semi-Gloss, Matt)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 245.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 51.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.50 }
+              ]
+            },
+            {
+              "product_code": "A116",
+              "product_name": "National N.C. Topcoat Metallic",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 400.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 90.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 27.00 }
+              ]
+            },
+            {
+              "product_code": "A114",
+              "product_name": "National N.C. Pearl Finish - Standard colors",
+              "prices": [
+                { "size": "3.6 Ltr (Gallon)", "price": 80.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 23.00 }
+              ]
+            },
+            {
+              "product_code": "A114G",
+              "product_name": "National N.C. Pearl Finish - Gold",
+              "prices": [
+                { "size": "3.6 Ltr (Gallon)", "price": 160.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 50.00 }
+              ]
+            },
+            {
+              "product_code": "A071C",
+              "product_name": "National N.C. Cracking Lacquer - Clear",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 268.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 55.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 18.00 }
+              ]
+            },
+            {
+              "product_code": "A071",
+              "product_name": "National N.C. Cracking Lacquer White & Off White",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 320.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 62.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 20.00 }
+              ]
+            },
+            {
+              "product_code": "A086",
+              "product_name": "National N.C. Wood Stain",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 290.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 18.00 }
+              ]
+            },
+            {
+              "product_code": "A274",
+              "product_name": "National Universal Wood Stain Plus",
+              "prices": [
+                { "size": "3.6 Ltr (Gallon)", "price": 130.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 34.00 }
+              ]
+            },
+            {
+              "product_code": "A326",
+              "product_name": "National Universal Wood Stain (Market Quality)",
+              "prices": [
+                { "size": "3.6 Ltr (Gallon)", "price": 85.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 23.00 }
+              ]
+            },
+            {
+              "product_code": "A186",
+              "product_name": "National P.U. Wood Sanding Sealer (2:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 420.00 },
+                { "size": "Gallon", "price": 84.00 }
+              ]
+            },
+            {
+              "product_code": "A187",
+              "product_name": "National P.U. Wood Clear Gloss (2:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 453.00 },
+                { "size": "Gallon", "price": 96.00 }
+              ]
+            },
+            {
+              "product_code": "A187",
+              "product_name": "National P.U. Wood Clear 30% Gloss (2:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 427.00 },
+                { "size": "Gallon", "price": 93.00 }
+              ]
+            },
+            {
+              "product_code": "A187",
+              "product_name": "National P.U. Wood Clear 20% Gloss (2:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 427.00 },
+                { "size": "Gallon", "price": 93.00 }
+              ]
+            },
+            {
+              "product_code": "A187",
+              "product_name": "National P.U. Wood Clear 10% Gloss (2:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 427.00 },
+                { "size": "Gallon", "price": 93.00 }
+              ]
+            },
+            {
+              "product_code": "A187",
+              "product_name": "National P.U. Wood Clear Semi-Gloss (2:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 427.00 },
+                { "size": "Gallon", "price": 93.00 }
+              ]
+            },
+            {
+              "product_code": "A187",
+              "product_name": "National P.U. Wood Clear Matt (2:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 453.00 },
+                { "size": "Gallon", "price": 96.00 }
+              ]
+            },
+            {
+              "product_code": "A237",
+              "product_name": "National P.U. Wood Primer White (2:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 440.00 },
+                { "size": "Gallon", "price": 94.00 }
+              ]
+            },
+            {
+              "product_code": "A327",
+              "product_name": "National P.U. Wood Topcoat Gloss (2:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 590.00 },
+                { "size": "Gallon", "price": 115.00 }
+              ]
+            },
+            {
+              "product_code": "A581",
+              "product_name": "National P.U. Wood Sanding Sealer (4:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 420.00 },
+                { "size": "Gallon", "price": 95.00 }
+              ]
+            },
+            {
+              "product_code": "A187",
+              "product_name": "National P.U. Wood Clear Semi-Gloss (4:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 450.00 },
+                { "size": "Gallon", "price": 100.00 }
+              ]
+            },
+            {
+              "product_code": "A238",
+              "product_name": "National P.U. Wood Clear Gloss (4:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 430.00 },
+                { "size": "Gallon", "price": 96.00 }
+              ]
+            },
+            {
+              "product_code": "A238",
+              "product_name": "National P.U. Wood Clear 30% Gloss (4:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 435.00 },
+                { "size": "Gallon", "price": 98.00 }
+              ]
+            },
+            {
+              "product_code": "A238",
+              "product_name": "National P.U. Wood Clear Matt (4:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 410.00 },
+                { "size": "Gallon", "price": 92.00 }
+              ]
+            },
+            {
+              "product_code": "A238",
+              "product_name": "National P.U. Wood Topcoat Gloss (4:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 520.00 },
+                { "size": "Gallon", "price": 110.00 }
+              ]
+            },
+            {
+              "product_code": "A237",
+              "product_name": "National P.U. Wood Primer White (4:1) (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 420.00 },
+                { "size": "Gallon", "price": 95.00 }
+              ]
+            },
+            {
+              "product_code": "A285",
+              "product_name": "National Polyurethane Wood Isolator (A+B)",
+              "prices": [{ "size": "Gallon", "price": 160.00 }]
+            },
+            {
+              "product_code": "A093",
+              "product_name": "National Polyurethane Metallic (A+B)",
+              "prices": [{ "size": "Gallon", "price": 200.00 }]
+            },
+            {
+              "product_code": "A317",
+              "product_name": "National Polyurethane Hammer Finish Pearl (A+B) (Gold And Bronze)",
+              "prices": [{ "size": "Gallon", "price": 250.00 }]
+            },
+            {
+              "product_code": "A246",
+              "product_name": "National Wood Preservative",
+              "prices": [
+                { "size": "Drum", "price": 300.00 },
+                { "size": "Gallon", "price": 65.00 },
+                { "size": "Liter", "price": 16.00 }
+              ]
+            },
+            {
+              "product_code": "A132",
+              "product_name": "Nationalthane Quick Dry (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 700.00 },
+                { "size": "Gallon", "price": 145.00 }
+              ]
+            },
+            {
+              "product_code": "A034",
+              "product_name": "Nationalthane Varnish Clear (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 620.00 },
+                { "size": "Gallon", "price": 130.00 }
+              ]
+            },
+            {
+              "product_code": "A154",
+              "product_name": "National Polyester Putty (Light Weight)",
+              "prices": [
+                { "size": "3.5 Kg (Gallon)", "price": 32.00 },
+                { "size": "1.5 Kg (Liter)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A029",
+              "product_name": "National Polyester Putty (Heavy Weight)",
+              "prices": [
+                { "size": "6 Kg (Gallon)", "price": 44.00 },
+                { "size": "2.0 Kg (Liter)", "price": 17.00 }
+              ]
+            },
+            {
+              "product_code": "A097",
+              "product_name": "National 2K Finish",
+              "prices": [
+                { "size": "Gallon", "price": 75.00 },
+                { "size": "Liter", "price": 20.00 }
+              ]
+            },
+            {
+              "product_code": "A097",
+              "product_name": "National 2K Clear",
+              "prices": [
+                { "size": "Gallon", "price": 75.00 },
+                { "size": "Liter", "price": 20.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Specialty Products",
+          "products": [
+            {
+              "product_code": "A076",
+              "product_name": "National Tennis Court Topcoat",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 330.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 74.00 }
+              ]
+            },
+            {
+              "product_code": "A173",
+              "product_name": "National Acrylic Primer (Solvent Base)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 275.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 }
+              ]
+            },
+            {
+              "product_code": "A182",
+              "product_name": "National Penetrating Siloxane Primer Sealer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 235.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 }
+              ]
+            },
+            {
+              "product_code": "A016",
+              "product_name": "National Silicone Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 330.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 73.00 }
+              ]
+            },
+            {
+              "product_code": "A183",
+              "product_name": "National Aqua Siloxane Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 178.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 40.00 }
+              ]
+            },
+            {
+              "product_code": "A303",
+              "product_name": "National Silk Touch (Solvent Base)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 450.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 100.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 30.00 }
+              ]
+            },
+            {
+              "product_code": "A229",
+              "product_name": "National Acrylic Glaze Coat Clear",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 190.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 43.00 }
+              ]
+            },
+            {
+              "product_code": "A224",
+              "product_name": "National Fungal Wash",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 95.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 23.00 }
+              ]
+            },
+            {
+              "product_code": "A107",
+              "product_name": "National Duct Coating",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 125.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 30.00 }
+              ]
+            },
+            {
+              "product_code": "A222",
+              "product_name": "National Cavalier (Thermal Insulating Paint)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 380.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 85.00 }
+              ]
+            },
+            {
+              "product_code": "A359",
+              "product_name": "National Acoustic Coating",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 250.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 }
+              ]
+            },
+            {
+              "product_code": "A429",
+              "product_name": "National Wall Guard Undercoat",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 120.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 35.00 }
+              ]
+            },
+            {
+              "product_code": "A188",
+              "product_name": "National Aliphatic Acrylic H.B.",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 410.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 90.00 }
+              ]
+            },
+            {
+              "product_code": "A355",
+              "product_name": "National Gypsum Joint Compound",
+              "prices": [
+                { "size": "28kg (Drum)", "price": 52.00 },
+                { "size": "5kg (Gallon)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A130",
+              "product_name": "National White Glue",
+              "prices": [
+                { "size": "20kg (Drum)", "price": 86.00 },
+                { "size": "4kg (Gallon)", "price": 20.00 },
+                { "size": "850gr (Tin)", "price": 5.50 }
+              ]
+            },
+            {
+              "product_code": "A365",
+              "product_name": "National Wood Adhesive",
+              "prices": [
+                { "size": "20kg (Drum)", "price": 80.00 },
+                { "size": "4kg (Gallon)", "price": 18.75 },
+                { "size": "850gr (Tin)", "price": 5.00 }
+              ]
+            },
+            {
+              "product_code": "A082",
+              "product_name": "National Tile Adhesive",
+              "prices": [{ "size": "Gallon", "price": 30.00 }]
+            },
+            {
+              "product_code": "A342",
+              "product_name": "National Siliconized Acrylic Sealant (White/Black/Grey)",
+              "prices": [{ "size": "24 Tubes/Box", "price": 73.00 }]
+            },
+            {
+              "product_code": "A342",
+              "product_name": "National Siliconized Acrylic Sealant (Clear)",
+              "prices": [{ "size": "24 Tubes/Box", "price": 94.00 }]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Expressions Products",
+          "products": [
+            {
+              "product_code": "A401",
+              "product_name": "Expressions Acrylic Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 113.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 17.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 7.90 }
+              ]
+            },
+            {
+              "product_code": "A402",
+              "product_name": "Expressions Base Coat",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 181.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 26.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A393",
+              "product_name": "Expressions Stucco",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 390.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 60.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 24.00 }
+              ]
+            },
+            {
+              "product_code": "A397",
+              "product_name": "Expressions Luster",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 3050.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 430.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 157.00 }
+              ]
+            },
+            {
+              "product_code": "A394",
+              "product_name": "Expressions Velvet - White",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 369.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 50.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 28.00 },
+                { "size": "14 Kg (Drum)", "price": 248.00 },
+                { "size": "4 Kg (Gallon)", "price": 72.00 }
+              ]
+            },
+            {
+              "product_code": "A400",
+              "product_name": "Expressions Metallic - (Gold/Silver/Copper/Bronze)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 1395.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 200.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 74.00 }
+              ]
+            },
+            {
+              "product_code": "A400",
+              "product_name": "Expressions Metallic - Other colors",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 1110.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 160.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 60.00 }
+              ]
+            },
+            {
+              "product_code": "A398",
+              "product_name": "Expressions Bellisi Perla",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 2047.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 292.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 107.00 }
+              ]
+            },
+            {
+              "product_code": "A395",
+              "product_name": "Expressions Accent",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 350.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 50.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 20.00 }
+              ]
+            },
+            {
+              "product_code": "A396",
+              "product_name": "Expressions Diamanti",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 1970.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 280.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 103.00 }
+              ]
+            },
+            {
+              "product_code": "A399",
+              "product_name": "Expressions Essenza",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 1755.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 250.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 92.00 }
+              ]
+            },
+            {
+              "product_code": "A392",
+              "product_name": "Expressions Revolution",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 1395.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 200.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 74.00 }
+              ]
+            },
+            {
+              "product_code": "A391",
+              "product_name": "Expressions Revolution Glaze",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 1395.00 },
+                { "size": "2.5 Ltr (Gallon)", "price": 200.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 74.00 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_name": "Protective Coatings",
+      "subcategories": [
+        {
+          "subcategory_name": "Alkyd Based Paints",
+          "products": [
+            {
+              "product_code": "A044",
+              "product_name": "National Zinc Phosphate Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 190.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 43.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 13.00 }
+              ]
+            },
+            {
+              "product_code": "A013",
+              "product_name": "National Zinc Chromate Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 228.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 50.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A145",
+              "product_name": "National Stoving Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 50.00 }
+              ]
+            },
+            {
+              "product_code": "A196",
+              "product_name": "National Industrial Quick Drying Primer - White",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 225.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 47.00 }
+              ]
+            },
+            {
+              "product_code": "A196",
+              "product_name": "National Industrial Quick Drying Primer - Red Oxide",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 206.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 44.00 }
+              ]
+            },
+            {
+              "product_code": "A177",
+              "product_name": "National Zinc Phosphate Quick Drying Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 198.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 42.00 }
+              ]
+            },
+            {
+              "product_code": "A049",
+              "product_name": "National Stoving Enamel",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 345.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 71.00 }
+              ]
+            },
+            {
+              "product_code": "A094",
+              "product_name": "National Industrial Quick Drying Enamel: White",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 330.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 71.00 }
+              ]
+            },
+            {
+              "product_code": "A094",
+              "product_name": "National Industrial Quick Drying Enamel: Black",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 300.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 65.00 }
+              ]
+            },
+            {
+              "product_code": "A094",
+              "product_name": "National Industrial Quick Drying Enamel: Red, Orange",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 370.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 81.00 }
+              ]
+            },
+            {
+              "product_code": "A094",
+              "product_name": "National Industrial Quick Drying Enamel: Blue, Green",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 340.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 73.00 }
+              ]
+            },
+            {
+              "product_code": "A094",
+              "product_name": "National Industrial Quick Drying Enamel: Cat., Yellow",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 330.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 71.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Epoxy Paints",
+          "products": [
+            {
+              "product_code": "A042",
+              "product_name": "National Guard Epoxy Red Oxide Primer (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 354.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 73.00 }
+              ]
+            },
+            {
+              "product_code": "A044",
+              "product_name": "National Guard Zinc Phosphate Epoxy Primer (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 354.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 78.00 }
+              ]
+            },
+            {
+              "product_code": "A083",
+              "product_name": "National Guard Zinc Phosphate Epoxy ShopPrimer (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 360.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 80.00 }
+              ]
+            },
+            {
+              "product_code": "A045",
+              "product_name": "National Guard Zinc Rich Epoxy Primer (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 1000.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 210.00 }
+              ]
+            },
+            {
+              "product_code": "A043",
+              "product_name": "National Guard Zinc Rich Epoxy ShopPrimer (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 950.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 205.00 }
+              ]
+            },
+            {
+              "product_code": "A041",
+              "product_name": "National Guard Epoxy Zinc Chromate Primer (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 420.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 90.00 }
+              ]
+            },
+            {
+              "product_code": "A318",
+              "product_name": "National Guard Epoxy M.I.O Primer (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 350.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 77.00 }
+              ]
+            },
+            {
+              "product_code": "A481",
+              "product_name": "National Universal Epoxy Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 330.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 68.00 }
+              ]
+            },
+            {
+              "product_code": "A042",
+              "product_name": "National Guard Epoxy Primer White (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 354.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 73.00 }
+              ]
+            },
+            {
+              "product_code": "A413",
+              "product_name": "National Guard Epoxy Primer Clear (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 380.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 85.00 }
+              ]
+            },
+            {
+              "product_code": "A040",
+              "product_name": "National Guard Epoxy M.I.O. H.B. (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 360.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 80.00 }
+              ]
+            },
+            {
+              "product_code": "A039",
+              "product_name": "National Guard Epoxy Undercoat H.B. (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 354.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 73.00 }
+              ]
+            },
+            {
+              "product_code": "A038",
+              "product_name": "National Guard Epoxy Topcoat (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 540.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 120.00 }
+              ]
+            },
+            {
+              "product_code": "A148",
+              "product_name": "National Guard Epoxy H.B. (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 340.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 78.00 }
+              ]
+            },
+            {
+              "product_code": "A040M",
+              "product_name": "National Guard Epoxy M.I.O. Topcoat (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 320.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 68.00 }
+              ]
+            },
+            {
+              "product_code": "A048",
+              "product_name": "National Guard Epoxy S.F.- Pigmented (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 590.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 125.00 }
+              ]
+            },
+            {
+              "product_code": "A084",
+              "product_name": "National Guard S.F. - Clear (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 450.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 100.00 }
+              ]
+            },
+            {
+              "product_code": "A037",
+              "product_name": "National Guard S.T. - Surface Tolerant (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 500.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 104.00 }
+              ]
+            },
+            {
+              "product_code": "A090",
+              "product_name": "National Guard Epoxy Aluminum (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 440.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 94.00 }
+              ]
+            },
+            {
+              "product_code": "A305",
+              "product_name": "National Guard PW - Potable Water (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 600.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 125.00 }
+              ]
+            },
+            {
+              "product_code": "A223",
+              "product_name": "National Guard Epoxy Rebar Coating (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 440.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 94.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Coal Tar Epoxy Paints",
+          "products": [
+            {
+              "product_code": "A064",
+              "product_name": "National Guard Coal Tar Epoxy (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 320.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 70.00 }
+              ]
+            },
+            {
+              "product_code": "A085",
+              "product_name": "National Guard Coal Tar Epoxy S.F. (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 520.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 105.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Chlorinated Rubber Paints",
+          "products": [
+            {
+              "product_code": "A036",
+              "product_name": "National Chlorubber Primer",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 308.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 65.00 }
+              ]
+            },
+            {
+              "product_code": "A358",
+              "product_name": "National Chlorubber M.I.O.",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 364.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 76.00 }
+              ]
+            },
+            {
+              "product_code": "A035",
+              "product_name": "National Chlorubber Topcoat",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 354.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 73.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Polyurethane Paints",
+          "products": [
+            {
+              "product_code": "A099",
+              "product_name": "National Polyurethane Primer (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 440.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 95.00 }
+              ]
+            },
+            {
+              "product_code": "A093",
+              "product_name": "National Polyurethane Topcoat (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 520.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 125.00 }
+              ]
+            },
+            {
+              "product_code": "A033",
+              "product_name": "Nationalthane Topcoat (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 620.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 135.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Heat Resistant Paints",
+          "products": [
+            {
+              "product_code": "A011",
+              "product_name": "National Aluminium Paint 200°C",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 235.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 53.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A120",
+              "product_name": "National Aluminium H.R. 400°C",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 685.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 140.00 }
+              ]
+            },
+            {
+              "product_code": "A121",
+              "product_name": "National Aluminium H.T. 600°C",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 730.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 149.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Fire Retardant Paints",
+          "products": [
+            {
+              "product_code": "A354",
+              "product_name": "National Fire Retardant Varnish (Water Based -A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 1000.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 206.00 }
+              ]
+            },
+            {
+              "product_code": "A276",
+              "product_name": "National Intumescent Paint",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 700.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 145.00 }
+              ]
+            },
+            {
+              "product_code": "A347",
+              "product_name": "National Intumescent Paint W",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 700.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 145.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Specialty Products",
+          "products": [
+            {
+              "product_code": "A050",
+              "product_name": "National Wash Primer (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 340.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 75.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 22.00 }
+              ]
+            },
+            {
+              "product_code": "A050",
+              "product_name": "National Etch Primer (A+B)",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 374.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 78.00 }
+              ]
+            },
+            {
+              "product_code": "A077",
+              "product_name": "National Zinc Silicate",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 1040.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 260.00 }
+              ]
+            },
+            {
+              "product_code": "A031",
+              "product_name": "National Rust Remover",
+              "prices": [
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 18.00 }
+              ]
+            },
+            {
+              "product_code": "A032",
+              "product_name": "National Paint Remover",
+              "prices": [
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 18.00 }
+              ]
+            },
+            {
+              "product_code": "A615",
+              "product_name": "NP Remover Plus Liquid / Gel",
+              "prices": [
+                { "size": "3.6 Ltr (Gallon)", "price": 120.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 35.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Can Coatings",
+          "products": [
+            {
+              "product_code": "A235",
+              "product_name": "National Can Coating White (Base Coat 1001)",
+              "prices": [{ "size": "per 1 KG", "price": 19.00 }]
+            },
+            {
+              "product_code": "A272",
+              "product_name": "National Can Coating White (Non varnish 1002)",
+              "prices": [{ "size": "per 1 KG", "price": 22.00 }]
+            },
+            {
+              "product_code": "A311",
+              "product_name": "National Can Coating Overprint (Varnish 1003)",
+              "prices": [{ "size": "per 1 KG", "price": 22.00 }]
+            },
+            {
+              "product_code": "A325",
+              "product_name": "National Can Coating Pigmented Lacquer (Buff Lacquer 1004)",
+              "prices": [{ "size": "per 1 KG", "price": 22.00 }]
+            },
+            {
+              "product_code": "A235",
+              "product_name": "National Can Coating Clear Lacquer (2001)",
+              "prices": [{ "size": "per 1 KG", "price": 21.00 }]
+            },
+            {
+              "product_code": "A235",
+              "product_name": "National Can Coating Gold Lacquer (2002)",
+              "prices": [{ "size": "per 1 KG", "price": 21.00 }]
+            },
+            {
+              "product_code": "A235",
+              "product_name": "National Can Coating White Lacquer (2003)",
+              "prices": [{ "size": "per 1 KG", "price": 23.00 }]
+            },
+            {
+              "product_code": "A235",
+              "product_name": "National Can Coating Buff Lacquer (2004)",
+              "prices": [{ "size": "per 1 KG", "price": 23.00 }]
+            },
+            {
+              "product_code": "A235",
+              "product_name": "National White Base Coat (3002)",
+              "prices": [{ "size": "per 1 KG", "price": 18.00 }]
+            },
+            {
+              "product_code": "A235",
+              "product_name": "National Can Coating O/P Varnish (3001)",
+              "prices": [{ "size": "per 1 KG", "price": 18.00 }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_name": "Thinners",
+      "subcategories": [
+        {
+          "subcategory_name": "Thinners",
+          "products": [
+            {
+              "product_code": "A059",
+              "product_name": "National G.P. Thinner (metal tin)",
+              "prices": [
+                { "size": "200 Ltr (Barrel)", "price": 1925.00 },
+                { "size": "18 Ltr (Drum)", "price": 180.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 40.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A059",
+              "product_name": "National G.P. Thinner (plastic tin)",
+              "prices": [
+                { "size": "3.6 Ltr (Gallon)", "price": 40.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A125",
+              "product_name": "National Lacquer Thinner (metal tin)",
+              "prices": [
+                { "size": "200 Ltr (Barrel)", "price": 1600.00 },
+                { "size": "18 Ltr (Drum)", "price": 160.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 36.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A125",
+              "product_name": "National Lacquer Thinner (plastic tin)",
+              "prices": [
+                { "size": "3.6 Ltr (Gallon)", "price": 36.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A074",
+              "product_name": "National Retarder Thinner",
+              "prices": [
+                { "size": "200 Ltr (Barrel)", "price": 2475.00 },
+                { "size": "18 Ltr (Drum)", "price": 230.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 50.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A058",
+              "product_name": "National Alkyd Cleaner",
+              "prices": [
+                { "size": "200 Ltr (Barrel)", "price": 1750.00 },
+                { "size": "18 Ltr (Drum)", "price": 165.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 36.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 11.00 }
+              ]
+            },
+            {
+              "product_code": "A066",
+              "product_name": "National White Spirit /Turpentine Thinner",
+              "prices": [
+                { "size": "200 Ltr (Barrel)", "price": 1480.00 },
+                { "size": "18 Ltr (Drum)", "price": 140.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 33.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 10.00 }
+              ]
+            },
+            {
+              "product_code": "A225",
+              "product_name": "National Q.D. Thinner",
+              "prices": [
+                { "size": "200 Ltr (Barrel)", "price": 1800.00 },
+                { "size": "18 Ltr (Drum)", "price": 166.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 37.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 11.00 }
+              ]
+            },
+            {
+              "product_code": "A061",
+              "product_name": "National Acrylic Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 175.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 39.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A065",
+              "product_name": "National Road Marking Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 175.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 39.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A075",
+              "product_name": "National Hypalon Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 175.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 39.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A055",
+              "product_name": "National Chlorubber Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 175.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 39.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A067",
+              "product_name": "National Fluorescent Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 175.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 39.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A138",
+              "product_name": "National Fire Retardant Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 175.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 39.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A383",
+              "product_name": "National Intumescent Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 175.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 39.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A054",
+              "product_name": "National Epoxy Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 161.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 46.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A112",
+              "product_name": "National Zinc Silicate Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 180.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 40.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A056",
+              "product_name": "National Polyurethane Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 164.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 46.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A239",
+              "product_name": "National P.U. Wood Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 250.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 55.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 16.00 }
+              ]
+            },
+            {
+              "product_code": "A111",
+              "product_name": "National 2K Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 250.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 55.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 16.00 }
+              ]
+            },
+            {
+              "product_code": "A057",
+              "product_name": "National Stoving Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 170.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 39.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A073",
+              "product_name": "National Wash Primer Thinner",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 180.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 41.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 13.00 }
+              ]
+            },
+            {
+              "product_code": "A151",
+              "product_name": "National Thinner For Cleaning",
+              "prices": [
+                { "size": "200 Ltr (Barrel)", "price": 1875.00 },
+                { "size": "18 Ltr (Drum)", "price": 175.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 39.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A482",
+              "product_name": "National Thinner 2020",
+              "prices": [
+                { "size": "200 Ltr (Barrel)", "price": 1350.00 },
+                { "size": "18 Ltr (Drum)", "price": 125.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 30.00 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_name": "Tinting Base",
+      "subcategories": [
+        {
+          "subcategory_name": "Decorative Tinting Base (Emulsions)",
+          "products": [
+            {
+              "product_code": "A200",
+              "product_name": "National Matt Emulsion - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 135.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 33.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 11.00 }
+              ]
+            },
+            {
+              "product_code": "A200",
+              "product_name": "National Matt Emulsion - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 125.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 31.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 10.00 }
+              ]
+            },
+            {
+              "product_code": "A200",
+              "product_name": "National Matt Emulsion - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 115.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 29.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 9.00 }
+              ]
+            },
+            {
+              "product_code": "A202",
+              "product_name": "National Eggshell Emulsion Matt Finish - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 175.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 40.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A202",
+              "product_name": "National Eggshell Emulsion Matt Finish – Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 165.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 38.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 11.00 }
+              ]
+            },
+            {
+              "product_code": "A202",
+              "product_name": "National Eggshell Emulsion Matt Finish - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 155.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 36.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 10.00 }
+              ]
+            },
+            {
+              "product_code": "A201",
+              "product_name": "National Eggshell Emulsion Silk Finish - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 195.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 46.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A201",
+              "product_name": "National Eggshell Emulsion Silk Finish - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 185.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 44.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 13.00 }
+              ]
+            },
+            {
+              "product_code": "A201",
+              "product_name": "National Eggshell Emulsion Silk Finish - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 175.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 42.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A226",
+              "product_name": "National Eggshell Emulsion Semi-Gloss - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 53.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 17.00 }
+              ]
+            },
+            {
+              "product_code": "A226",
+              "product_name": "National Eggshell Emulsion Semi-Gloss - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 230.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 16.00 }
+              ]
+            },
+            {
+              "product_code": "A226",
+              "product_name": "National Eggshell Emulsion Semi-Gloss - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 220.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 51.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A467",
+              "product_name": "National Action Emulsion - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 100.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 25.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A467",
+              "product_name": "National Action Emulsion - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 90.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 23.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 11.00 }
+              ]
+            },
+            {
+              "product_code": "A467",
+              "product_name": "National Action Emulsion - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 80.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 21.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 10.00 }
+              ]
+            },
+            {
+              "product_code": "A166",
+              "product_name": "National Shield Topcoat Gloss Finish - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 340.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 77.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 22.00 }
+              ]
+            },
+            {
+              "product_code": "A166",
+              "product_name": "National Shield Topcoat Gloss Finish - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 330.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 76.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 21.00 }
+              ]
+            },
+            {
+              "product_code": "A166",
+              "product_name": "National Shield Topcoat Gloss Finish - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 320.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 75.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 20.00 }
+              ]
+            },
+            {
+              "product_code": "A363",
+              "product_name": "National Shield Topcoat Matt Finish - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 270.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 61.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 18.00 }
+              ]
+            },
+            {
+              "product_code": "A363",
+              "product_name": "National Shield Topcoat Matt Finish - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 260.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 17.00 }
+              ]
+            },
+            {
+              "product_code": "A363",
+              "product_name": "National Shield Topcoat Matt Finish - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 250.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 59.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 16.00 }
+              ]
+            },
+            {
+              "product_code": "A165",
+              "product_name": "National Shield Topcoat Silk Finish - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 290.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 64.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 19.00 }
+              ]
+            },
+            {
+              "product_code": "A165",
+              "product_name": "National Shield Topcoat Silk Finish - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 280.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 63.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 18.00 }
+              ]
+            },
+            {
+              "product_code": "A165",
+              "product_name": "National Shield Topcoat Silk Finish - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 270.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 62.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 17.00 }
+              ]
+            },
+            {
+              "product_code": "A368",
+              "product_name": "National Shield Topcoat Semi-Gloss Finish - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 330.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 75.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 21.00 }
+              ]
+            },
+            {
+              "product_code": "A368",
+              "product_name": "National Shield Topcoat Semi-Gloss Finish - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 320.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 74.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 20.00 }
+              ]
+            },
+            {
+              "product_code": "A368",
+              "product_name": "National Shield Topcoat Semi-Gloss Finish - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 310.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 73.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 19.00 }
+              ]
+            },
+            {
+              "product_code": "A170",
+              "product_name": "National Shield Ultra Silk - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 275.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 62.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 18.00 }
+              ]
+            },
+            {
+              "product_code": "A170",
+              "product_name": "National Shield Ultra Silk - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 265.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 61.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 17.00 }
+              ]
+            },
+            {
+              "product_code": "A170",
+              "product_name": "National Shield Ultra Silk - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 255.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 60.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 16.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Decorative Tinting Base (Enamel)",
+          "products": [
+            {
+              "product_code": "A203",
+              "product_name": "National Synthetic Enamel G-I Gloss - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A203",
+              "product_name": "National Synthetic Enamel G-I Gloss - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 230.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 50.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 13.00 }
+              ]
+            },
+            {
+              "product_code": "A203",
+              "product_name": "National Synthetic Enamel G-I Gloss - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 220.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 48.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A204",
+              "product_name": "National Synthetic Enamel G-I Semi-Gloss - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 265.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 58.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 17.00 }
+              ]
+            },
+            {
+              "product_code": "A204",
+              "product_name": "National Synthetic Enamel G-I Semi-Gloss - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 255.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 57.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 16.00 }
+              ]
+            },
+            {
+              "product_code": "A204",
+              "product_name": "National Synthetic Enamel G-I Semi-Gloss - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 245.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 56.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 16.00 }
+              ]
+            },
+            {
+              "product_code": "A205",
+              "product_name": "National Flat/Matt Enamel G-I - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A205",
+              "product_name": "National Flat/Matt Enamel G-I - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 230.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 50.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 13.00 }
+              ]
+            },
+            {
+              "product_code": "A205",
+              "product_name": "National Flat/Matt Enamel G-I - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 220.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 48.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 12.00 }
+              ]
+            },
+            {
+              "product_code": "A206",
+              "product_name": "National Synthetic Enamel G-II (Fast Drying) - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 260.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 56.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 15.00 }
+              ]
+            },
+            {
+              "product_code": "A206",
+              "product_name": "National Synthetic Enamel G-II (Fast Drying) - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 250.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 54.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 14.00 }
+              ]
+            },
+            {
+              "product_code": "A206",
+              "product_name": "National Synthetic Enamel G-II (Fast Drying) - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 240.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 52.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 13.00 }
+              ]
+            },
+            {
+              "product_code": "A207",
+              "product_name": "National Synthetic Enamel G-II (Fast Drying) Matt Finish - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 290.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 63.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 19.00 }
+              ]
+            },
+            {
+              "product_code": "A207",
+              "product_name": "National Synthetic Enamel G-II (Fast Drying) Matt Finish - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 280.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 62.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 18.00 }
+              ]
+            },
+            {
+              "product_code": "A207",
+              "product_name": "National Synthetic Enamel G-II (Fast Drying) Matt Finish - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 270.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 61.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 17.00 }
+              ]
+            },
+            {
+              "product_code": "A208",
+              "product_name": "National Synthetic Enamel G-II (Fast Drying) Semi-Gloss - Base WO",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 290.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 63.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 19.00 }
+              ]
+            },
+            {
+              "product_code": "A208",
+              "product_name": "National Synthetic Enamel G-II (Fast Drying) Semi-Gloss - Base W1",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 280.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 62.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 18.00 }
+              ]
+            },
+            {
+              "product_code": "A208",
+              "product_name": "National Synthetic Enamel G-II (Fast Drying) Semi-Gloss - Base N",
+              "prices": [
+                { "size": "18 Ltr (Drum)", "price": 270.00 },
+                { "size": "3.6 Ltr (Gallon)", "price": 61.00 },
+                { "size": "0.9 Ltr (Tin)", "price": 17.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Expressions Tinting Base",
+          "products": [
+            {
+              "product_code": "A393",
+              "product_name": "Expressions Stucco - Base WO",
+              "prices": [
+                { "size": "Drum", "price": 390.00 },
+                { "size": "Gallon", "price": 60.00 },
+                { "size": "Liter", "price": 24.00 }
+              ]
+            },
+            {
+              "product_code": "A393",
+              "product_name": "Expressions Stucco - Base W1",
+              "prices": [
+                { "size": "Drum", "price": 380.00 },
+                { "size": "Gallon", "price": 59.00 },
+                { "size": "Liter", "price": 24.00 }
+              ]
+            },
+            {
+              "product_code": "A393",
+              "product_name": "Expressions Stucco - Base N",
+              "prices": [
+                { "size": "Drum", "price": 370.00 },
+                { "size": "Gallon", "price": 58.00 },
+                { "size": "Liter", "price": 23.00 }
+              ]
+            },
+            {
+              "product_code": "A398",
+              "product_name": "Expressions Bellisi Perla - Base WO",
+              "prices": [
+                { "size": "Gallon", "price": 292.00 },
+                { "size": "Liter", "price": 107.00 }
+              ]
+            },
+            {
+              "product_code": "A396",
+              "product_name": "Expressions Diamanti - Base WO",
+              "prices": [
+                { "size": "Gallon", "price": 280.00 },
+                { "size": "Liter", "price": 103.00 }
+              ]
+            },
+            {
+              "product_code": "A394",
+              "product_name": "Expressions Velvet – Base WO",
+              "prices": [
+                { "size": "Drum (14 Kg)", "price": 248.00 },
+                { "size": "Gallon (4 Kg)", "price": 72.00 },
+                { "size": "Liter", "price": 28.00 }
+              ]
+            },
+            {
+              "product_code": "A399",
+              "product_name": "Expressions Essenza - Base WO Silver",
+              "prices": [
+                { "size": "Gallon", "price": 250.00 },
+                { "size": "Liter", "price": 92.00 }
+              ]
+            },
+            {
+              "product_code": "A399",
+              "product_name": "Expressions Essenza - Base WO Gold",
+              "prices": [
+                { "size": "Gallon", "price": 250.00 },
+                { "size": "Liter", "price": 92.00 }
+              ]
+            }
+          ]
+        },
+        {
+          "subcategory_name": "Industrial Tinting Base",
+          "products": [
+            {
+              "product_code": "A033",
+              "product_name": "Nationalthane Topcoat - Base White (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 550.00 },
+                { "size": "Gallon", "price": 120.00 },
+                { "size": "Liter", "price": 36.00 }
+              ]
+            },
+            {
+              "product_code": "A033",
+              "product_name": "Nationalthane Topcoat - Base Neutral (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 540.00 },
+                { "size": "Gallon", "price": 118.00 },
+                { "size": "Liter", "price": 35.00 }
+              ]
+            },
+            {
+              "product_code": "A093",
+              "product_name": "National Polyurethane Topcoat - Base White (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 475.00 },
+                { "size": "Gallon", "price": 113.00 },
+                { "size": "Liter", "price": 34.00 }
+              ]
+            },
+            {
+              "product_code": "A093",
+              "product_name": "National Polyurethane Topcoat - Base Neutral (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 430.00 },
+                { "size": "Gallon", "price": 103.00 },
+                { "size": "Liter", "price": 31.00 }
+              ]
+            },
+            {
+              "product_code": "A038",
+              "product_name": "National Guard Epoxy Topcoat - Base White (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 590.00 },
+                { "size": "Gallon", "price": 128.00 },
+                { "size": "Liter", "price": 36.00 }
+              ]
+            },
+            {
+              "product_code": "A038",
+              "product_name": "National Guard Epoxy Topcoat - Base Neutral (A+B)",
+              "prices": [
+                { "size": "Drum", "price": 420.00 },
+                { "size": "Gallon", "price": 94.00 },
+                { "size": "Liter", "price": 27.00 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
