@@ -33,7 +33,10 @@ def _normalize_price(value: object) -> float:
 
         cleaned = cleaned.lower().replace("aed", "")
         cleaned = cleaned.replace(",", "")
+        cleaned = re.sub(r"/-\s*$", "", cleaned)
+        cleaned = cleaned.strip()
         cleaned = re.sub(r"[^0-9.\-]", "", cleaned)
+        cleaned = cleaned.rstrip("-")
 
         if cleaned in {"", ".", "-", "-.", ".-"}:
             raise ValueError(f"Could not parse price value: {value!r}")
