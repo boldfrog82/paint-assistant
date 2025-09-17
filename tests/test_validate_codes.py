@@ -1,7 +1,6 @@
 import validate_codes
 
 
-codex/normalize-product-codes-and-sizes
 def _build_price_payload(product_codes):
     return {
         "product_categories": [
@@ -25,10 +24,12 @@ def test_find_duplicate_codes_detects_a050_duplicate(monkeypatch):
     monkeypatch.setattr(validate_codes, "load_pricelist", lambda path=None: price_payload)
 
     duplicates = validate_codes.find_duplicate_codes()
-=======
+
+    assert duplicates == {"A050": 2}
+
+
 def test_find_duplicate_codes_uses_payload_from_monkeypatched_pricelist(monkeypatch):
     """A synthetic payload should produce the expected duplicate mapping."""
-master
 
     payload = {
         "product_categories": [
