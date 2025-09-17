@@ -28,6 +28,16 @@ def test_find_duplicate_codes_detects_a050_duplicate(monkeypatch):
     assert duplicates == {"A050": 2}
 
 
+def test_find_duplicate_codes_normalizes_product_codes(monkeypatch):
+    price_payload = _build_price_payload(["A050", " a050 ", "B123"])
+
+    monkeypatch.setattr(validate_codes, "load_pricelist", lambda path=None: price_payload)
+
+    duplicates = validate_codes.find_duplicate_codes()
+
+    assert duplicates == {"A050": 2}
+
+
 def test_find_duplicate_codes_uses_payload_from_monkeypatched_pricelist(monkeypatch):
     """A synthetic payload should produce the expected duplicate mapping."""
 

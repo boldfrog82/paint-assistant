@@ -9,6 +9,8 @@ from collections import Counter
 from pathlib import Path
 from typing import Iterable, List
 
+from paint_assistant import _normalize_product_code
+
 
 def iter_product_codes(data: dict) -> Iterable[str]:
     """Yield each product code from the nested price list structure."""
@@ -16,8 +18,10 @@ def iter_product_codes(data: dict) -> Iterable[str]:
         for subcategory in category.get("subcategories", []):
             for product in subcategory.get("products", []):
                 code = product.get("product_code")
-                if code is not None:
-                    yield code
+                if isinstance(code, str):
+                    normalized = _normalize_product_code(code)
+                    if normalized:
+                        yield normalized
 
 
 def load_codes(file_path: Path) -> List[str]:
