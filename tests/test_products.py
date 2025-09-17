@@ -36,7 +36,19 @@ def test_get_price_returns_expected_value(price_data):
     assert price == pytest.approx(80.0)
 
 
+def test_get_price_handles_normalized_inputs(price_data):
+    price = paint_assistant.get_price("  a119  ", " 18   LTR   (DRUM)  ", price_data=price_data)
+
+    assert price == pytest.approx(80.0)
+
+
 def test_list_sizes_returns_known_sizes(price_data):
     sizes = paint_assistant.list_sizes("A119", price_data=price_data)
+
+    assert sizes == ["18 Ltr (Drum)", "3.6 Ltr (Gallon)"]
+
+
+def test_list_sizes_accepts_case_insensitive_code(price_data):
+    sizes = paint_assistant.list_sizes("a119", price_data=price_data)
 
     assert sizes == ["18 Ltr (Drum)", "3.6 Ltr (Gallon)"]

@@ -47,6 +47,18 @@ def load_pricelist(path: str | Path = PRICELIST_PATH) -> Mapping[str, object]:
         return json.load(handle)
 
 
+def _normalize_product_code(value: str) -> str:
+    """Return a canonical representation for *value* codes."""
+
+    return value.strip().upper()
+
+
+def _normalize_size(value: str) -> str:
+    """Return a case-insensitive, whitespace-normalised size label."""
+
+    return " ".join(value.strip().lower().split())
+
+
 def get_price(product_code: str, size: str, *, price_data: Mapping[str, object] | None = None) -> float:
     """Return the price for a product *code* and *size* combination.
 
@@ -69,11 +81,16 @@ def get_price(product_code: str, size: str, *, price_data: Mapping[str, object] 
     if price_data is None:
         price_data = load_pricelist()
 
+    normalized_code = _normalize_product_code(product_code)
+    normalized_size = _normalize_size(size)
+
     for product in _iter_price_products(price_data):
-        if product.get("product_code") != product_code:
+        code = product.get("product_code")
+        if not isinstance(code, str) or _normalize_product_code(code) != normalized_code:
             continue
         for entry in product.get("prices", []):
-            if entry.get("size") == size:
+            size_label = entry.get("size")
+            if isinstance(size_label, str) and _normalize_size(size_label) == normalized_size:
                 return float(entry["price"])
         raise KeyError(f"Size {size!r} not found for product code {product_code!r}")
 
@@ -100,8 +117,11 @@ def list_sizes(product_code: str, *, price_data: Mapping[str, object] | None = N
     if price_data is None:
         price_data = load_pricelist()
 
+    normalized_code = _normalize_product_code(product_code)
+
     for product in _iter_price_products(price_data):
-        if product.get("product_code") == product_code:
+        code = product.get("product_code")
+        if isinstance(code, str) and _normalize_product_code(code) == normalized_code:
             return [entry.get("size", "") for entry in product.get("prices", [])]
 
     raise KeyError(f"Product code {product_code!r} not found in price list")
