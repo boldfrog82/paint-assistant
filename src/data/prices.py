@@ -9,6 +9,13 @@ from typing import Dict, List, Optional
 
 _PRICE_DATA: Dict[str, Dict[str, object]] | None = None
 
+_DASH_TRANSLATION = str.maketrans(
+    {
+        "\u2013": "-",  # en dash
+        "\u2014": "-",  # em dash
+    }
+)
+
 
 def _price_list_path() -> Path:
     """Return the path to the bundled National Paints price list JSON."""
@@ -51,7 +58,10 @@ def _normalize_price(value: object) -> float:
 
 def _normalize_size_key(size: object) -> str:
     """Create a canonical key for a size label."""
-    text = str(size or "").strip().lower()
+
+    text = str(size or "")
+    text = text.translate(_DASH_TRANSLATION)
+    text = text.strip().lower()
     return re.sub(r"\s+", " ", text)
 
 
