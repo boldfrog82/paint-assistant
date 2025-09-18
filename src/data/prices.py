@@ -59,6 +59,12 @@ def _normalize_size(value: str) -> str:
     return " ".join(value.strip().lower().split())
 
 
+def list_product_codes() -> List[str]:
+    """Return all product codes available in the price list."""
+
+    return list(_products_by_code().keys())
+
+
 def lookup_price(code: str, size: str) -> Tuple[Optional[Dict[str, Any]], Optional[Dict[str, Any]], str]:
     product = get_product_by_code(code)
     currency = get_currency()
@@ -78,5 +84,6 @@ __all__ = [
     "get_currency",
     "get_product_by_code",
     "list_available_sizes",
+    "list_product_codes",
     "lookup_price",
 ]
