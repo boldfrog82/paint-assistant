@@ -55,6 +55,21 @@ def test_respond_to_price_unknown_size() -> None:
     assert response == expected
 
 
+def test_respond_to_price_without_size_lists_available_sizes() -> None:
+    response = respond_to("How much does A119 cost?")
+
+    assert "Available sizes are:" in response
+    assert "(code A119)" in response
+
+
+def test_respond_to_price_of_phrase_detects_code() -> None:
+    response = respond_to("How much is the price of A119?")
+
+    assert "Available sizes are:" in response
+    assert "(code A119)" in response
+    assert "code price" not in response.lower()
+
+
 def test_respond_to_unknown_product_name() -> None:
     response = respond_to("Tell me about unknown product")
 

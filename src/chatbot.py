@@ -3,17 +3,99 @@
 from __future__ import annotations
 
 import re
+from typing import Optional, Sequence, Tuple
 
 try:  # pragma: no cover - allow running both as a module and as a script.
+    from .chatbot_config import ChatbotConfig, DEFAULT_CONFIG
     from .data.products import find_product_by_name, summarize_product
     from .data.prices import list_available_sizes, lookup_price
 except ImportError:  # pragma: no cover - fallback for direct script execution.
+    from chatbot_config import ChatbotConfig, DEFAULT_CONFIG  # type: ignore
     from data.products import find_product_by_name, summarize_product  # type: ignore
     from data.prices import list_available_sizes, lookup_price  # type: ignore
 
 
 _ABOUT_RE = re.compile(r"^\s*tell me about\s+(.+?)[\.!?]*\s*$", re.IGNORECASE)
-_PRICE_RE = re.compile(r"^\s*how much is\s+([A-Za-z0-9]+)\s+in\s+(.+?)[\.!?]*\s*$", re.IGNORECASE)
+_IN_SPLIT_RE = re.compile(r"\bin\b", re.IGNORECASE)
+_TRAILING_PUNCTUATION = " .,!?;:"
+
+
+def _normalise_whitespace(text: str) -> str:
+    return " ".join(text.strip().split())
+
+
+def _strip_trailing_punctuation(text: str) -> str:
+    return text.rstrip(_TRAILING_PUNCTUATION)
+
+
+def _remove_filler_tokens(text: str, filler_words: Sequence[str]) -> str:
+    cleaned = text
+    for filler in sorted({word.strip() for word in filler_words if word}, key=len, reverse=True):
+        pattern = re.compile(rf"\b{re.escape(filler)}\b", re.IGNORECASE)
+        cleaned = pattern.sub(" ", cleaned)
+    return _normalise_whitespace(cleaned)
+
+
+def _extract_code_and_size(text: str) -> Optional[Tuple[str, str, bool]]:
+    value = _strip_trailing_punctuation(text.strip())
+    if not value:
+        return None
+
+    in_match = _IN_SPLIT_RE.search(value)
+    if in_match:
+        prefix = _strip_trailing_punctuation(value[: in_match.start()].strip())
+        suffix = _strip_trailing_punctuation(value[in_match.end() :].strip())
+        if prefix:
+            return prefix, suffix, False
+
+    tokens = value.split()
+    if not tokens:
+        return None
+
+    code = _strip_trailing_punctuation(tokens[0])
+    remainder = value[len(tokens[0]) :].strip()
+    remainder = _strip_trailing_punctuation(remainder)
+    return code, remainder, True
+
+
+def _parse_price_query(message: str, config: ChatbotConfig) -> Optional[Tuple[str, str]]:
+    normalised = _normalise_whitespace(message)
+    lowered = normalised.lower()
+
+    for trigger in config.price_triggers:
+        trigger = trigger.strip().lower()
+        if not trigger:
+            continue
+        if not lowered.startswith(trigger):
+            continue
+
+        remainder = normalised[len(trigger) :].strip()
+        if not remainder:
+            continue
+
+        remainder = _strip_trailing_punctuation(remainder)
+        if not remainder:
+            continue
+
+        remainder = _remove_filler_tokens(remainder, config.filler_words)
+        if not remainder:
+            continue
+
+        digits_present = any(char.isdigit() for char in remainder)
+        extracted = _extract_code_and_size(remainder)
+        if not extracted:
+            continue
+
+        code, size, used_fallback = extracted
+        if not code:
+            continue
+
+        if used_fallback and digits_present and not any(char.isdigit() for char in code):
+            continue
+
+        return code, size
+
+    return None
 
 
 def _handle_about(product_name: str) -> str:
@@ -58,7 +140,7 @@ def _handle_price(product_code: str, size: str) -> str:
     )
 
 
-def respond_to(message: str) -> str:
+def respond_to(message: str, *, config: Optional[ChatbotConfig] = None) -> str:
     message = message.strip()
     if not message:
         return "Please enter a question about a product or its price."
@@ -68,9 +150,12 @@ def respond_to(message: str) -> str:
         product_name = about_match.group(1)
         return _handle_about(product_name)
 
-    price_match = _PRICE_RE.match(message)
-    if price_match:
-        product_code, size = price_match.groups()
+    if config is None:
+        config = DEFAULT_CONFIG
+
+    price_query = _parse_price_query(message, config)
+    if price_query:
+        product_code, size = price_query
         return _handle_price(product_code, size)
 
     return (
