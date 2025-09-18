@@ -36,6 +36,40 @@ def _remove_filler_tokens(text: str, filler_words: Sequence[str]) -> str:
     return _normalise_whitespace(cleaned)
 
 
+def _choose_code_token(tokens: Sequence[str]) -> Tuple[str, int]:
+    """Return the most likely product code token and its index."""
+
+    best_digit_idx = None
+    best_digit_token = ""
+    best_any_idx = None
+    best_any_token = ""
+
+    for index in range(len(tokens) - 1, -1, -1):
+        token = tokens[index]
+        cleaned = _strip_trailing_punctuation(token)
+        if not cleaned:
+            continue
+
+        if best_any_idx is None:
+            best_any_idx = index
+            best_any_token = cleaned
+
+        if any(char.isdigit() for char in cleaned):
+            if any(char.isalpha() for char in cleaned):
+                return cleaned, index
+            if best_digit_idx is None:
+                best_digit_idx = index
+                best_digit_token = cleaned
+
+    if best_digit_idx is not None:
+        return best_digit_token, best_digit_idx
+
+    if best_any_idx is not None:
+        return best_any_token, best_any_idx
+
+    return "", -1
+
+
 def _extract_code_and_size(text: str) -> Optional[Tuple[str, str, bool]]:
     value = _strip_trailing_punctuation(text.strip())
     if not value:
@@ -46,14 +80,22 @@ def _extract_code_and_size(text: str) -> Optional[Tuple[str, str, bool]]:
         prefix = _strip_trailing_punctuation(value[: in_match.start()].strip())
         suffix = _strip_trailing_punctuation(value[in_match.end() :].strip())
         if prefix:
-            return prefix, suffix, False
+            tokens = prefix.split()
+            code, _ = _choose_code_token(tokens)
+            if not code:
+                return None
+            return code, suffix, False
 
     tokens = value.split()
     if not tokens:
         return None
 
-    code = _strip_trailing_punctuation(tokens[0])
-    remainder = value[len(tokens[0]) :].strip()
+    code, index = _choose_code_token(tokens)
+    if not code:
+        return None
+
+    remainder_tokens = tokens[index + 1 :]
+    remainder = " ".join(remainder_tokens).strip()
     remainder = _strip_trailing_punctuation(remainder)
     return code, remainder, True
 
