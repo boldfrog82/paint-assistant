@@ -88,26 +88,54 @@ def _load_price_data() -> Dict[str, Dict[str, object]]:
                 if isinstance(product_name, str) and product_name and product_name not in entry["product_names"]:
                     entry["product_names"].append(product_name)
 
-                prices = product.get("prices", [])
-                if not isinstance(prices, list):
+                prices_field = product.get("prices")
+                price_sources: List[tuple[Optional[str], List[dict]]] = []
+
+                if isinstance(prices_field, list) and prices_field:
+                    price_sources.append((None, prices_field))
+                else:
+                    variants = product.get("variants", [])
+                    if isinstance(variants, list):
+                        for variant in variants:
+                            if not isinstance(variant, dict):
+                                continue
+
+                            variant_name = variant.get("variant_name")
+                            variant_prices = variant.get("prices", [])
+                            if not isinstance(variant_prices, list) or not variant_prices:
+                                continue
+
+                            price_sources.append((variant_name, variant_prices))
+
+                if not price_sources:
                     continue
 
-                for price_entry in prices:
-                    if not isinstance(price_entry, dict):
-                        continue
+                for variant_name, prices in price_sources:
+                    variant_label = ""
+                    if variant_name is not None:
+                        variant_label = str(variant_name).strip()
 
-                    size_label = price_entry.get("size")
-                    if not size_label:
-                        continue
+                    for price_entry in prices:
+                        if not isinstance(price_entry, dict):
+                            continue
 
-                    normalized_price = _normalize_price(price_entry.get("price"))
-                    size_key = _normalize_size_key(size_label)
+                        size_label_value = price_entry.get("size")
+                        if not size_label_value:
+                            continue
 
-                    entry["prices"][size_key] = {
-                        "size": str(size_label).strip(),
-                        "price": normalized_price,
-                        "currency": default_currency,
-                    }
+                        size_label = str(size_label_value).strip()
+                        combined_label = size_label
+                        if variant_label:
+                            combined_label = f"{variant_label} – {size_label}"
+
+                        normalized_price = _normalize_price(price_entry.get("price"))
+                        size_key = _normalize_size_key(combined_label)
+
+                        entry["prices"][size_key] = {
+                            "size": combined_label,
+                            "price": normalized_price,
+                            "currency": default_currency,
+                        }
 
     _PRICE_DATA = price_data
     return _PRICE_DATA
