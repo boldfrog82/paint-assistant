@@ -45,6 +45,23 @@ def test_respond_to_price_lookup_success() -> None:
     assert response == expected
 
 
+@pytest.mark.parametrize(
+    "prompt",
+    [
+        "How much is the price of code A119 in 18 Ltr (Drum)?",
+        "How much is the price of product code A119 in 18 Ltr (Drum)?",
+        "How much is the price of buy A119 in 18 Ltr (Drum)?",
+        "How much is the price of purchase A119 in 18 Ltr (Drum)?",
+    ],
+)
+def test_respond_to_price_lookup_with_code_fillers(prompt: str) -> None:
+    expected = "National Acrylic Primer (W.B.) (code A119) costs 80.00 AED for 18 Ltr (Drum)."
+
+    response = respond_to(prompt)
+
+    assert response == expected
+
+
 def test_respond_to_price_unknown_size() -> None:
     response = respond_to("How much is A119 in 1 Ltr?")
 
