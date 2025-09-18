@@ -33,3 +33,9 @@ def test_get_price_handles_variant_only_product():
 
     assert get_price("A015", "White – 18 Ltr (Drum)") == 60.0
     assert get_price("a015", "APS – 3.6 Ltr (Gallon)") == 23.0
+
+
+def test_get_price_normalizes_standard_hyphen():
+    """Regular hyphen usage still matches sizes stored with typographic dashes."""
+
+    assert get_price("A015", "White - 18 Ltr (Drum)") == 60.0
