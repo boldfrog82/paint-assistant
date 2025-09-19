@@ -147,6 +147,8 @@ def generate_answer(
                         text = "".join(text_parts).strip()
                         if text:
                             return text
+        except Exception as exc:  # pragma: no cover - network errors
+            raise RuntimeError("Failed to generate response from OpenAI API") from exc
         else:
             try:
                 text = completion.choices[0].message.content
