@@ -140,6 +140,18 @@ def _parse_price_query(message: str, config: ChatbotConfig) -> Optional[Tuple[st
     return None
 
 
+def parse_price_prompt(
+    message: str,
+    *,
+    config: Optional[ChatbotConfig] = None,
+) -> Optional[Tuple[str, str]]:
+    """Return (code, size) when the prompt looks like a price query."""
+
+    if config is None:
+        config = DEFAULT_CONFIG
+    return _parse_price_query(message, config)
+
+
 def _handle_about(product_name: str) -> str:
     product = find_product_by_name(product_name)
     if not product:
@@ -234,3 +246,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+__all__ = ["respond_to", "run_cli", "parse_price_prompt", "main"]
