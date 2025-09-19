@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import sys
+import types
+
 import pytest
 
 try:
@@ -91,3 +94,37 @@ def test_ai_chat_returns_service_unavailable_when_openai_fails(monkeypatch):
 
     assert response.status_code == 503
     assert response.json()["detail"] == "Failed to generate response from OpenAI API"
+
+
+def test_generate_answer_uses_legacy_openai_when_v1_client_missing(monkeypatch):
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    legacy_openai = types.ModuleType("openai")
+
+    class LegacyChatCompletion:
+        calls = []
+
+        @classmethod
+        def create(cls, *args, **kwargs):
+            cls.calls.append({"args": args, "kwargs": kwargs})
+            return {"choices": [{"message": {"content": "Legacy response"}}]}
+
+    legacy_openai.ChatCompletion = LegacyChatCompletion  # type: ignore[attr-defined]
+    legacy_openai.api_key = None  # type: ignore[attr-defined]
+
+    monkeypatch.setitem(sys.modules, "openai", legacy_openai)
+    monkeypatch.delitem(sys.modules, "src.models.llm", raising=False)
+
+    import src.models.llm as llm
+
+    try:
+        reply = llm.generate_answer("hello", contexts=[], tools=[])
+        assert reply == "Legacy response"
+        assert LegacyChatCompletion.calls, "Legacy ChatCompletion.create was not invoked"
+        assert llm.OpenAI is None
+        assert llm.openai is legacy_openai
+    finally:
+        sys.modules.pop("src.models.llm", None)
+        models_pkg = sys.modules.get("src.models")
+        if models_pkg is not None and hasattr(models_pkg, "llm"):
+            delattr(models_pkg, "llm")
