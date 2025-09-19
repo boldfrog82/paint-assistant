@@ -5,6 +5,7 @@ from __future__ import annotations
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+from app.ai_routes import router as ai_router
 from src.chatbot import respond_to
 
 
@@ -21,6 +22,7 @@ class ChatResponse(BaseModel):
 
 
 app = FastAPI(title="Paint Assistant API", version="1.0.0")
+app.include_router(ai_router)
 
 
 @app.get("/health", tags=["Health"])
