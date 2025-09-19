@@ -10,7 +10,7 @@ from ..rag import RetrievedChunk
 
 try:  # pragma: no cover - optional dependency
     from openai import OpenAI  # type: ignore
-except ModuleNotFoundError:  # pragma: no cover - support environments without OpenAI SDK
+except ImportError:  # pragma: no cover - support environments without OpenAI SDK
     OpenAI = None  # type: ignore[misc,assignment]
 
 try:  # pragma: no cover - optional dependency
