@@ -18,6 +18,7 @@ except ImportError:  # pragma: no cover - fallback for direct script execution.
 _ABOUT_RE = re.compile(r"^\s*tell me about\s+(.+?)[\.!?]*\s*$", re.IGNORECASE)
 _IN_SPLIT_RE = re.compile(r"\bin\b", re.IGNORECASE)
 _TRAILING_PUNCTUATION = " .,!?;:"
+_WRAPPING_PUNCTUATION = "\"'()[]{}<>“”‘’"
 
 
 def _normalise_whitespace(text: str) -> str:
@@ -26,6 +27,17 @@ def _normalise_whitespace(text: str) -> str:
 
 def _strip_trailing_punctuation(text: str) -> str:
     return text.rstrip(_TRAILING_PUNCTUATION)
+
+
+def _strip_code_token(text: str) -> str:
+    """Remove common wrapping punctuation from a potential product code token."""
+
+    cleaned = _strip_trailing_punctuation(text.strip())
+    cleaned = cleaned.strip(_WRAPPING_PUNCTUATION)
+    # Removing wrapping punctuation can expose additional trailing punctuation such as
+    # commas or question marks (e.g. "(A119),"), so strip once more.
+    cleaned = cleaned.rstrip(_TRAILING_PUNCTUATION)
+    return cleaned.strip(_WRAPPING_PUNCTUATION)
 
 
 def _remove_filler_tokens(text: str, filler_words: Sequence[str]) -> str:
@@ -46,7 +58,7 @@ def _choose_code_token(tokens: Sequence[str]) -> Tuple[str, int]:
 
     for index in range(len(tokens) - 1, -1, -1):
         token = tokens[index]
-        cleaned = _strip_trailing_punctuation(token)
+        cleaned = _strip_code_token(token)
         if not cleaned:
             continue
 
@@ -82,6 +94,7 @@ def _extract_code_and_size(text: str) -> Optional[Tuple[str, str, bool]]:
         if prefix:
             tokens = prefix.split()
             code, _ = _choose_code_token(tokens)
+            code = _strip_code_token(code)
             if not code:
                 return None
             return code, suffix, False
@@ -91,6 +104,7 @@ def _extract_code_and_size(text: str) -> Optional[Tuple[str, str, bool]]:
         return None
 
     code, index = _choose_code_token(tokens)
+    code = _strip_code_token(code)
     if not code:
         return None
 
