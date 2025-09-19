@@ -58,3 +58,36 @@ def test_ai_chat_rejects_empty_prompt(monkeypatch):
     response = client.post("/ai/chat", json={"prompt": "   "})
     assert response.status_code == 400
     assert response.json()["detail"] == "Prompt must not be empty."
+
+
+@pytest.mark.skipif(TestClient is None, reason="FastAPI is not installed")
+def test_ai_chat_returns_service_unavailable_when_openai_fails(monkeypatch):
+    from app import ai_routes
+    from src.models import llm
+
+    class DummyPipeline:
+        def get_contexts(self, query: str, *, top_k: int = 18, rerank_k: int = 5):
+            return []
+
+    monkeypatch.setattr(ai_routes, "_PIPELINE", DummyPipeline())
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    class FailingCompletions:
+        def create(self, *args, **kwargs):
+            raise Exception("boom")
+
+    class FailingChat:
+        def __init__(self):
+            self.completions = FailingCompletions()
+
+    class FailingClient:
+        def __init__(self, *args, **kwargs):
+            self.chat = FailingChat()
+
+    monkeypatch.setattr(llm, "OpenAI", FailingClient)
+    monkeypatch.setattr(llm, "openai", None)
+
+    response = client.post("/ai/chat", json={"prompt": "Hello there"})
+
+    assert response.status_code == 503
+    assert response.json()["detail"] == "Failed to generate response from OpenAI API"
