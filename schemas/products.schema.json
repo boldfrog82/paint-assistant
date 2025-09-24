@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/products.schema.json",
+  "title": "Paint products",
+  "type": "array",
+  "items": {
+    "anyOf": [
+      {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "product_name"
+          ],
+          "properties": {
+            "product_name": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      {
+        "type": "object",
+        "properties": {
+          "products": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "product_name"
+              ],
+              "properties": {
+                "product_name": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    ]
+  }
+}
