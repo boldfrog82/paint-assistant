@@ -1,3 +1,5 @@
+codex/create-product-quotation-tool-k925yv
+
 codex/create-product-quotation-tool-chfqn1
 
 codex/create-product-quotation-tool-db0tm4
@@ -7,6 +9,7 @@ codex/create-product-quotation-tool-nq6b3b
 codex/create-product-quotation-tool
 Codex
 odex
+Codex
 Codex
 # Paint Quotation Generator
 
@@ -62,11 +65,14 @@ schemas/                   # JSON Schemas for validation
 scripts/validate_data.py   # Data validation helper
 tests/test_quote.py        # Pytest suite
 ```
+codex/create-product-quotation-tool-k925yv
+
 codex/create-product-quotation-tool-chfqn1
 
 codex/create-product-quotation-tool-db0tm4
 
 codex/create-product-quotation-tool-nq6b3b
+Codex
 Codex
 Codex
 
@@ -84,6 +90,8 @@ The browser UI lets you:
 - enter quantities and optional discounts for each line item
 - review running subtotals with 5% VAT automatically applied
 - download the current quotation as CSV or export a simple PDF invoice
+codex/create-product-quotation-tool-k925yv
+
 codex/create-product-quotation-tool-chfqn1
 
 codex/create-product-quotation-tool-db0tm4
@@ -114,6 +122,7 @@ Features:
 
 The script reads prices from `pricelistnationalpaints.json`, so keep that file
 up to date to reflect the latest pricing.
+Codex
 Codex
 Codex
 Codex
