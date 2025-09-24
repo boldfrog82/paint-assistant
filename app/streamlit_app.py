@@ -1,4 +1,7 @@
+codex/create-product-quotation-tool-chfqn1
+
 codex/create-product-quotation-tool-db0tm4
+Codex
 """Minimal Streamlit UI for building customer paint quotations."""
 
 from __future__ import annotations
@@ -6,6 +9,8 @@ from __future__ import annotations
 import io
 from datetime import datetime
 from decimal import Decimal
+codex/create-product-quotation-tool-chfqn1
+
 
 codex/create-product-quotation-tool-nq6b3b
 """Minimal Streamlit UI for building customer paint quotations."""
@@ -24,13 +29,17 @@ from decimal import Decimal
 from pathlib import Path
 Codex
 Codex
+Codex
 from typing import List
 
 import pandas as pd
 import streamlit as st
+codex/create-product-quotation-tool-chfqn1
+
 codex/create-product-quotation-tool-db0tm4
 
 codex/create-product-quotation-tool-nq6b3b
+Codex
 Codex
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
@@ -65,6 +74,12 @@ def _format_decimal(value: Decimal, digits: int | None = None) -> str:
     if "." in text:
         text = text.rstrip("0").rstrip(".")
     return text or "0"
+
+codex/create-product-quotation-tool-chfqn1
+
+def build_pdf(
+    customer: dict,
+    items: List[dict],
 
 codex/create-product-quotation-tool-db0tm4
 
@@ -111,13 +126,17 @@ codex/create-product-quotation-tool-nq6b3b
     quote_items: List[QuoteItem],
 Codex
 Codex
+Codex
     subtotal: Decimal,
     vat: Decimal,
     total: Decimal,
 ) -> bytes:
+codex/create-product-quotation-tool-chfqn1
+
 codex/create-product-quotation-tool-db0tm4
 
 codex/create-product-quotation-tool-nq6b3b
+Codex
 Codex
     """Create a simple PDF invoice for the current quotation."""
 
@@ -189,6 +208,8 @@ Codex
 
     pdf.showPage()
     pdf.save()
+codex/create-product-quotation-tool-chfqn1
+
 codex/create-product-quotation-tool-db0tm4
 
 
@@ -254,13 +275,17 @@ codex/create-product-quotation-tool-db0tm4
     document.build(elements)
 Codex
 Codex
+Codex
     buffer.seek(0)
     return buffer.read()
 
 
+codex/create-product-quotation-tool-chfqn1
+
 codex/create-product-quotation-tool-db0tm4
 
 codex/create-product-quotation-tool-nq6b3b
+Codex
 Codex
 if "items" not in st.session_state:
     st.session_state["items"] = []
@@ -315,6 +340,8 @@ with st.expander("Current quotation", expanded=bool(items)):
                 "Line Net": format_aed(item["line_net"]),
             }
             for item in items
+codex/create-product-quotation-tool-chfqn1
+
 codex/create-product-quotation-tool-db0tm4
 
 
@@ -391,13 +418,17 @@ with st.expander("Current quote", expanded=True):
             for item in quote_items
 Codex
 Codex
+Codex
         ]
         table_df = pd.DataFrame(table_rows)
         st.dataframe(table_df, hide_index=True, use_container_width=True)
 
+codex/create-product-quotation-tool-chfqn1
+
 codex/create-product-quotation-tool-db0tm4
 
 codex/create-product-quotation-tool-nq6b3b
+Codex
 Codex
         subtotal, vat, total = compute_totals(items)
         col1, col2, col3 = st.columns(3)
@@ -422,6 +453,8 @@ Codex
         st.download_button(
             "Download CSV",
             data=csv_data,
+codex/create-product-quotation-tool-chfqn1
+
 codex/create-product-quotation-tool-db0tm4
 
 
@@ -436,6 +469,7 @@ codex/create-product-quotation-tool-db0tm4
             csv_data,
 Codex
 Codex
+Codex
             file_name="paint-quotation.csv",
             mime="text/csv",
             use_container_width=True,
@@ -443,6 +477,9 @@ Codex
 
         pdf_bytes = build_pdf(
             {"name": customer_name, "phone": customer_phone, "notes": customer_notes},
+codex/create-product-quotation-tool-chfqn1
+            items,
+
 codex/create-product-quotation-tool-db0tm4
             items,
 
@@ -452,11 +489,15 @@ codex/create-product-quotation-tool-nq6b3b
             quote_items,
 Codex
 Codex
+Codex
             subtotal,
             vat,
             total,
         )
         st.download_button(
+codex/create-product-quotation-tool-chfqn1
+            "Export PDF",
+
 codex/create-product-quotation-tool-db0tm4
             "Export PDF",
 
@@ -466,21 +507,27 @@ codex/create-product-quotation-tool-nq6b3b
             "Export to PDF",
 Codex
 Codex
+Codex
             data=pdf_bytes,
             file_name="paint-quotation.pdf",
             mime="application/pdf",
             use_container_width=True,
         )
 
+codex/create-product-quotation-tool-chfqn1
+
 codex/create-product-quotation-tool-db0tm4
 
 codex/create-product-quotation-tool-nq6b3b
+Codex
 Codex
         if st.button("Clear quote"):
             st.session_state["items"] = []
             st.experimental_rerun()
     else:
         st.caption("Add products to start building a quotation.")
+codex/create-product-quotation-tool-chfqn1
+
 codex/create-product-quotation-tool-db0tm4
 
 
@@ -489,5 +536,6 @@ codex/create-product-quotation-tool-db0tm4
             st.experimental_rerun()
     else:
         st.caption("Add items to build your quotation.")
+Codex
 Codex
 Codex
