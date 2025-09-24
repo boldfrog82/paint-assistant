@@ -81,7 +81,7 @@ def build_pdf(
     customer: dict,
     items: List[dict],
 
-codex/create-product-quotation-tool-db0tm4
+
 
 def build_pdf(
     customer: dict,
