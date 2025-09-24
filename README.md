@@ -1,4 +1,7 @@
+codex/create-product-quotation-tool-nq6b3b
+
 codex/create-product-quotation-tool
+Codex
 # Paint Quotation Generator
 
 An interactive Streamlit application for building customer quotations using the National Paints product catalogue and price list. The tool lets sales teams search the catalogue, add products with pack sizes, apply optional discounts, and export quotations as CSV or PDF files. Totals automatically include the mandatory 5% VAT.
@@ -53,7 +56,24 @@ schemas/                   # JSON Schemas for validation
 scripts/validate_data.py   # Data validation helper
 tests/test_quote.py        # Pytest suite
 ```
-=======
+codex/create-product-quotation-tool-nq6b3b
+
+## Web UI (Streamlit)
+
+Launch the quotation interface locally with:
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+The browser UI lets you:
+
+- search the catalogue with instant suggestions and select the right pack size
+- enter quantities and optional discounts for each line item
+- review running subtotals with 5% VAT automatically applied
+- download the current quotation as CSV or export a simple PDF invoice
+
+
 # paint-assistant
 
 This repository contains supporting data for National Paints products together
@@ -78,4 +98,5 @@ Features:
 
 The script reads prices from `pricelistnationalpaints.json`, so keep that file
 up to date to reflect the latest pricing.
+Codex
 Codex
