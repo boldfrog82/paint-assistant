@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from dataclasses import dataclass
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 from typing import Dict, Iterable, List
@@ -97,6 +98,37 @@ _PRODUCT_LOOKUP = {
     product.get("product_name"): product for product in _PRODUCTS if product.get("product_name")
 }
 
+for name, product in _PRODUCT_LOOKUP.items():
+    packs = list(_PRICE_CATALOG.get(name, {}).keys())
+    if packs:
+        product["packs"] = packs
+
+
+@dataclass(frozen=True)
+class QuoteItem:
+    """Immutable container describing a single line on the quotation."""
+
+    product_id: str
+    product_name: str
+    pack: str
+    quantity: Decimal
+    unit_price: Decimal
+    discount_pct: Decimal
+    line_net: Decimal
+
+    def as_dict(self) -> dict:
+        """Return a plain ``dict`` for serialization/UI rendering."""
+
+        return {
+            "product_id": self.product_id,
+            "product_name": self.product_name,
+            "pack": self.pack,
+            "quantity": self.quantity,
+            "unit_price": self.unit_price,
+            "discount_pct": self.discount_pct,
+            "line_net": self.line_net,
+        }
+
 
 def find_matching_products(query: str) -> List[dict]:
     """Return catalogue entries whose name contains the query string."""
@@ -136,8 +168,8 @@ def quote_row(
     discount = _to_decimal(discount_pct)
     if quantity <= 0:
         raise ValueError("Quantity must be greater than zero")
-    if discount < 0:
-        raise ValueError("Discount cannot be negative")
+    if not Decimal("0") <= discount <= Decimal("100"):
+        raise ValueError("Discount must be between 0 and 100 percent")
 
     unit_price = pack_prices[pack]
     line_gross = unit_price * quantity
@@ -149,15 +181,16 @@ def quote_row(
     product = _PRODUCT_LOOKUP.get(product_id)
     product_name = product.get("product_name") if product else product_id
 
-    return {
-        "product_id": product_id,
-        "product_name": product_name,
-        "pack": pack,
-        "quantity": quantity,
-        "unit_price": unit_price,
-        "discount_pct": discount,
-        "line_net": line_net,
-    }
+    item = QuoteItem(
+        product_id=product_id,
+        product_name=product_name,
+        pack=pack,
+        quantity=quantity,
+        unit_price=unit_price,
+        discount_pct=discount,
+        line_net=line_net,
+    )
+    return item.as_dict()
 
 
 def compute_totals(items: Iterable[dict]) -> tuple[Decimal, Decimal, Decimal]:

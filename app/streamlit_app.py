@@ -170,14 +170,20 @@ else:
     st.info("No products match the current search.")
 
 if selected_product:
-    pack_options = PRICE_CATALOG.get(selected_product, {})
-    packs = list(pack_options.keys())
+    product_record = product_options[selected_product]
+    pack_prices = PRICE_CATALOG.get(selected_product, {})
+    packs = product_record.get("packs") or list(pack_prices.keys())
     if packs:
         pack_choice = st.selectbox("Pack", packs, key="pack_select")
-        quantity_value = st.number_input(
+        current_price = pack_prices.get(pack_choice)
+        if current_price is not None:
+            st.caption(f"Unit price: {format_aed(current_price)}")
+
+        qty_col, discount_col = st.columns(2)
+        quantity_value = qty_col.number_input(
             "Quantity", min_value=1, value=1, step=1, format="%d"
         )
-        discount_value = st.number_input(
+        discount_value = discount_col.number_input(
             "Discount (%)", min_value=0.0, max_value=100.0, value=0.0, step=0.5
         )
 
@@ -257,6 +263,6 @@ with st.expander("Current quotation", expanded=bool(items)):
 
         if st.button("Clear quote"):
             st.session_state["items"] = []
-            st.experimental_rerun()
+            st.rerun()
     else:
         st.caption("Add products to start building a quotation.")
