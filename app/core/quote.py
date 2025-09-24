@@ -1,3 +1,10 @@
+codex/create-product-quotation-tool-db0tm4
+"""Quotation helpers for the Streamlit paint quotation app."""
+
+from __future__ import annotations
+
+import json
+
 codex/create-product-quotation-tool-nq6b3b
 """Quotation helpers for the Streamlit paint quotation app."""
 
@@ -8,6 +15,7 @@ from __future__ import annotations
 
 import json
 codex/create-product-quotation-tool-nq6b3b
+Codex
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 from typing import Dict, Iterable, List
@@ -22,6 +30,8 @@ PRICES_PATH = ROOT_DIR / "data" / "pricelistnationalpaints.json"
 
 def _to_decimal(value: Decimal | float | int | str) -> Decimal:
     """Convert numeric inputs to :class:`Decimal`."""
+
+codex/create-product-quotation-tool-db0tm4
 
 from dataclasses import dataclass, asdict
 from decimal import Decimal, ROUND_HALF_UP
@@ -61,23 +71,32 @@ def _to_decimal(value: Decimal | float | int | str) -> Decimal:
     """Convert supported numeric inputs to :class:`~decimal.Decimal`."""
 Codex
 
+Codex
     if isinstance(value, Decimal):
         return value
     return Decimal(str(value))
 
 
 def format_aed(value: Decimal | float | int | str) -> str:
+codex/create-product-quotation-tool-db0tm4
+    """Return a value formatted as an AED currency string."""
+
+
 codex/create-product-quotation-tool-nq6b3b
     """Return a value formatted as an AED currency string."""
 
     """Format a value as an AED currency string."""
 Codex
 
+Codex
     amount = _to_decimal(value).quantize(MONEY_QUANT, rounding=ROUND_HALF_UP)
     return f"AED {amount:,.2f}"
 
 
+codex/create-product-quotation-tool-db0tm4
+
 codex/create-product-quotation-tool-nq6b3b
+Codex
 def load_products(path: str | Path | None = None) -> List[dict]:
     """Load product metadata from ``paint_products.json``.
 
@@ -120,6 +139,8 @@ def load_price_catalog(path: str | Path | None = None) -> Dict[str, Dict[str, De
         raw = json.load(handle)
 
     catalog: Dict[str, Dict[str, Decimal]] = {}
+codex/create-product-quotation-tool-db0tm4
+
 
 def load_products(path: str | Path) -> List[Dict]:
     """Load and flatten product metadata from ``paint_products.json``."""
@@ -148,11 +169,15 @@ def load_price_catalog(path: str | Path) -> Dict[str, List[Dict[str, Decimal]]]:
 
     catalog: Dict[str, List[Dict[str, Decimal]]] = {}
 Codex
+Codex
     for category in raw.get("product_categories", []):
         for subcategory in category.get("subcategories", []):
             for product in subcategory.get("products", []):
                 name = product.get("product_name")
+codex/create-product-quotation-tool-db0tm4
+
 codex/create-product-quotation-tool-nq6b3b
+Codex
                 if not name:
                     continue
                 packs: Dict[str, Decimal] = {}
@@ -254,6 +279,8 @@ __all__ = [
     "load_price_catalog",
     "load_products",
     "quote_row",
+codex/create-product-quotation-tool-db0tm4
+
 
                 prices = [
                     {"size": tier.get("size", ""), "price": _to_decimal(tier.get("price", 0))}
@@ -337,5 +364,6 @@ __all__ = [
     "load_price_catalog",
     "load_products",
     "search_products",
+Codex
 Codex
 ]

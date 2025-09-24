@@ -1,10 +1,15 @@
+codex/create-product-quotation-tool-db0tm4
+
 codex/create-product-quotation-tool-nq6b3b
+odex
 streamlit>=1.37
 pandas>=2.2
 jinja2>=3.1
 reportlab>=4.2
 pydantic>=2.8
 pytest>=7.4
+codex/create-product-quotation-tool-db0tm4
+
 
 streamlit
 pandas
@@ -13,4 +18,5 @@ jinja2
 reportlab
 jsonschema
 pytest
+Codex
 Codex
