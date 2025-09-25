@@ -165,6 +165,68 @@ ngrok.disconnect(public_url.public_url)
 !killall streamlit
 ```
 
+### Troubleshooting Streamlit in Colab
+
+If the ngrok tunnel opens but the public page shows an error (for example,
+`ERR_NGROK_8012`), verify that Streamlit is actually running on port 8501 before
+retrying:
+
+1. **Confirm you are inside the repository and the app file exists**
+   ```python
+   %cd /content/paint-assistant
+   !ls -lah
+   !ls -lah app
+   ```
+
+2. **Run Streamlit's sample app to confirm the runtime works**
+   ```python
+   !streamlit hello
+   ```
+   If this fails, reinstall the requirements (including `pyngrok` and
+   `streamlit`) and rerun the hello app.
+
+   ```python
+   !pip install -q -r requirements.txt pyngrok streamlit
+   ```
+
+3. **Start your application with logs visible**
+   ```python
+   !streamlit run app/streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+   ```
+   Leave this cell running while you inspect the output. Fix any missing module
+   or file path errors that appear in the logs. When the server is ready,
+   Streamlit prints a local URL such as `http://0.0.0.0:8501`.
+
+4. **Open the ngrok tunnel in a new cell after Streamlit is running**
+   ```python
+   from pyngrok import ngrok
+
+   public_url = ngrok.connect(8501)
+   print("Public URL:", public_url)
+   ```
+
+   You can confirm the listener exists with:
+
+   ```python
+   !ss -ltnp | grep 8501
+   ```
+
+   If you previously launched a broken background process, stop it and try
+   again:
+
+   ```python
+   !pkill -f "streamlit run" || True
+   ```
+
+   Unsure about the app path? List the available Streamlit files:
+
+   ```python
+   !find . -maxdepth 3 -iname "*streamlit*.py"
+   ```
+
+Once the Streamlit logs show the server is running and `ss` reports a listener on
+`0.0.0.0:8501`, the ngrok link will load the quotation builder correctly.
+
 ## Command-line quotation tool
 
 If you prefer working in the terminal, run the interactive helper:
