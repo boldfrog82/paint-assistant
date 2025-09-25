@@ -1,3 +1,19 @@
+codex/create-product-quotation-tool-nnzhnd
+
+codex/create-product-quotation-tool-k925yv
+
+codex/create-product-quotation-tool-chfqn1
+
+codex/create-product-quotation-tool-db0tm4
+
+codex/create-product-quotation-tool-nq6b3b
+
+codex/create-product-quotation-tool
+Codex
+odex
+Codex
+Codex
+odex
 # Paint Quotation Generator
 
 An interactive Streamlit application for building customer quotations using the National Paints product catalogue and price list. The tool lets sales teams search the catalogue, add products with pack sizes, apply optional discounts, and export quotations as CSV or PDF files. Totals automatically include the mandatory 5% VAT.
@@ -52,6 +68,19 @@ schemas/                   # JSON Schemas for validation
 scripts/validate_data.py   # Data validation helper
 tests/test_quote.py        # Pytest suite
 ```
+codex/create-product-quotation-tool-nnzhnd
+
+codex/create-product-quotation-tool-k925yv
+
+codex/create-product-quotation-tool-chfqn1
+
+codex/create-product-quotation-tool-db0tm4
+
+codex/create-product-quotation-tool-nq6b3b
+Codex
+Codex
+Codex
+Codex
 
 ## Web UI (Streamlit)
 
@@ -67,6 +96,7 @@ The browser UI lets you:
 - enter quantities and optional discounts for each line item
 - review running subtotals with 5% VAT automatically applied
 - download the current quotation as CSV or export a simple PDF invoice
+codex/create-product-quotation-tool-nnzhnd
 
 ## Static HTML quotation builder
 
@@ -251,3 +281,42 @@ The script lets you type a product name to receive Google-style suggestions,
 choose the pack size (drum, gallon, litre, etc.), apply an optional discount,
 and automatically calculates the subtotal, VAT (5%), and grand total for the
 quotation.
+
+codex/create-product-quotation-tool-k925yv
+
+codex/create-product-quotation-tool-chfqn1
+
+codex/create-product-quotation-tool-db0tm4
+
+
+
+# paint-assistant
+
+This repository contains supporting data for National Paints products together
+with a lightweight interactive quotation builder.
+
+## Quotation Builder
+
+Run the tool from the repository root:
+
+```
+python quotation_tool.py
+```
+
+Features:
+
+- Type part of a product name and receive instant suggestions similar to a
+  search engine auto-complete.
+- Choose the desired pack size (drum, gallon, litre, etc.) and quantity.
+- Apply an optional per-line discount before VAT.
+- Automatically calculates the subtotal, total discount, VAT (5%), and the
+  grand total for the quotation.
+
+The script reads prices from `pricelistnationalpaints.json`, so keep that file
+up to date to reflect the latest pricing.
+Codex
+Codex
+Codex
+Codex
+Codex
+Codex
