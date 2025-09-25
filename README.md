@@ -80,12 +80,17 @@ message shown in the screenshot.
 **Cell 1 – Clone the repository**
 
 ```python
-!git clone https://github.com/YOUR_GITHUB_USERNAME/paint-assistant.git
+repo_url = input("Enter the HTTPS clone URL of your paint-assistant repository: ").strip()
+!git clone "$repo_url"
 %cd paint-assistant
 ```
 
-If you have not forked the project, substitute the URL of the repository you
-want to work with (for example, your own fork).
+When prompted, paste the full HTTPS address of the repository you want to use
+and press Enter (for example,
+`https://github.com/your-company/paint-assistant.git`). This avoids the
+"could not read Username" error that appears when a placeholder URL is left
+unchanged. If the project is private, supply a Personal Access Token as part of
+the URL, such as `https://<TOKEN>@github.com/your-company/paint-assistant.git`.
 
 **Cell 2 – Install dependencies (plus pyngrok for tunnelling)**
 
