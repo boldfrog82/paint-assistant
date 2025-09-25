@@ -120,11 +120,24 @@ os.environ["STREAMLIT_SERVER_ADDRESS"] = "0.0.0.0"
 !streamlit run app/streamlit_app.py &>/dev/null &
 ```
 
-**Cell 6 – Open an ngrok tunnel and display the public URL**
+**Cell 6 – (First time only) authenticate ngrok**
 
 ```python
+from getpass import getpass
 from pyngrok import ngrok
 
+authtoken = getpass("Paste your ngrok authtoken (visit dashboard.ngrok.com to generate one): ").strip()
+if authtoken:
+    ngrok.set_auth_token(authtoken)
+```
+
+You must sign up for a free ngrok account and supply the personal authtoken
+displayed at <https://dashboard.ngrok.com/get-started/your-authtoken>. Without
+it, ngrok returns the `ERR_NGROK_4018` authentication error shown in Colab.
+
+**Cell 7 – Open an ngrok tunnel and display the public URL**
+
+```python
 public_url = ngrok.connect(8501, "http")
 public_url
 ```
