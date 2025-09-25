@@ -131,3 +131,16 @@ finished, disconnect the tunnel and stop Streamlit:
 ngrok.disconnect(public_url.public_url)
 !killall streamlit
 ```
+
+## Command-line quotation tool
+
+If you prefer working in the terminal, run the interactive helper:
+
+```bash
+python quotation_tool.py
+```
+
+The script lets you type a product name to receive Google-style suggestions,
+choose the pack size (drum, gallon, litre, etc.), apply an optional discount,
+and automatically calculates the subtotal, VAT (5%), and grand total for the
+quotation.
