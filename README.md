@@ -142,9 +142,20 @@ any token, ngrok returns the `ERR_NGROK_4018` authentication error shown in Cola
 **Cell 7 – Open an ngrok tunnel and display the public URL**
 
 ```python
-public_url = ngrok.connect(8501, "http")
-public_url
+from pyngrok.exception import PyngrokNgrokError
+
+try:
+    public_url = ngrok.connect(8501, "http")
+    public_url
+except PyngrokNgrokError as exc:
+    print("ngrok could not open the tunnel:", exc)
+    print("Double-check that your account is verified and that you pasted only the authtoken string.")
 ```
+
+If ngrok logs lines that begin with `ERROR:pyngrok...`, treat them as
+diagnostic output rather than Python commands—do not copy those log lines into
+another cell. Instead, resolve the authentication issue (usually by confirming
+your ngrok e-mail address and reinstalling the authtoken) and rerun the cell.
 
 Visit the returned link to interact with the quotation builder. When you are
 finished, disconnect the tunnel and stop Streamlit:
