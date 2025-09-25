@@ -1,3 +1,7 @@
+codex/create-product-quotation-tool-nnzhnd
+"""Tests covering discount calculations and VAT totals."""
+
+
 codex/create-product-quotation-tool-k925yv
 """Tests covering discount calculations and VAT totals."""
 
@@ -19,9 +23,12 @@ Codex
 Codex
 Codex
 Codex
+Codex
 from decimal import Decimal
 from pathlib import Path
 import sys
+
+codex/create-product-quotation-tool-nnzhnd
 
 codex/create-product-quotation-tool-k925yv
 
@@ -37,9 +44,12 @@ Codex
 Codex
 Codex
 Codex
+Codex
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
+
+codex/create-product-quotation-tool-nnzhnd
 
 codex/create-product-quotation-tool-k925yv
 
@@ -48,6 +58,7 @@ codex/create-product-quotation-tool-chfqn1
 codex/create-product-quotation-tool-db0tm4
 
 codex/create-product-quotation-tool-nq6b3b
+Codex
 Codex
 Codex
 Codex
@@ -74,6 +85,8 @@ def test_totals_for_multiple_rows() -> None:
     assert subtotal == Decimal("210.00")
     assert vat == Decimal("10.50")
     assert total == Decimal("220.50")
+codex/create-product-quotation-tool-nnzhnd
+
 codex/create-product-quotation-tool-k925yv
 
 codex/create-product-quotation-tool-chfqn1
@@ -133,6 +146,7 @@ def test_quote_item_line_total_matches_function():
         discount_pct=Decimal("5"),
     )
     assert item.line_total == calculate_line_total("45.50", 3, 5)
+Codex
 Codex
 Codex
 Codex

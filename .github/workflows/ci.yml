@@ -14,6 +14,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+codex/create-product-quotation-tool-nnzhnd
+
 codex/create-product-quotation-tool-k925yv
 
 codex/create-product-quotation-tool-chfqn1
@@ -21,10 +23,24 @@ codex/create-product-quotation-tool-chfqn1
 codex/create-product-quotation-tool-db0tm4
 Codex
 Codex
+Codex
       - name: Install system packages
         run: |
           sudo apt-get update
           sudo apt-get install -y libfreetype6-dev libjpeg-dev zlib1g-dev
+codex/create-product-quotation-tool-nnzhnd
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f "${{ github.workspace }}/dev-requirements.txt" ]; then
+            pip install -r "${{ github.workspace }}/dev-requirements.txt"
+          elif [ -f "${{ github.workspace }}/requirements.txt" ]; then
+            pip install -r "${{ github.workspace }}/requirements.txt"
+          else
+            echo "No requirements file found" >&2
+            exit 1
+          fi
+
 codex/create-product-quotation-tool-k925yv
 
 codex/create-product-quotation-tool-chfqn1
@@ -43,5 +59,6 @@ odex
           pip install -r requirements.txt
 Codex
 Codex
+odex
       - name: Run tests
         run: pytest

@@ -1,10 +1,15 @@
+codex/create-product-quotation-tool-nnzhnd
+
 codex/create-product-quotation-tool-k925yv
+Codex
 """Quotation helpers for the Streamlit paint quotation app."""
 
 from __future__ import annotations
 
 import json
 from dataclasses import dataclass
+codex/create-product-quotation-tool-nnzhnd
+
 
 codex/create-product-quotation-tool-chfqn1
 
@@ -31,6 +36,7 @@ codex/create-product-quotation-tool-nq6b3b
 Codex
 Codex
 Codex
+Codex
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 from typing import Dict, Iterable, List
@@ -45,6 +51,8 @@ PRICES_PATH = ROOT_DIR / "data" / "pricelistnationalpaints.json"
 
 def _to_decimal(value: Decimal | float | int | str) -> Decimal:
     """Convert numeric inputs to :class:`Decimal`."""
+
+codex/create-product-quotation-tool-nnzhnd
 
 codex/create-product-quotation-tool-k925yv
 
@@ -93,12 +101,17 @@ Codex
 Codex
 Codex
 Codex
+Codex
     if isinstance(value, Decimal):
         return value
     return Decimal(str(value))
 
 
 def format_aed(value: Decimal | float | int | str) -> str:
+codex/create-product-quotation-tool-nnzhnd
+    """Return a value formatted as an AED currency string."""
+
+
 codex/create-product-quotation-tool-k925yv
     """Return a value formatted as an AED currency string."""
 
@@ -120,9 +133,12 @@ Codex
 Codex
 Codex
 Codex
+Codex
     amount = _to_decimal(value).quantize(MONEY_QUANT, rounding=ROUND_HALF_UP)
     return f"AED {amount:,.2f}"
 
+
+codex/create-product-quotation-tool-nnzhnd
 
 codex/create-product-quotation-tool-k925yv
 
@@ -131,6 +147,7 @@ codex/create-product-quotation-tool-chfqn1
 codex/create-product-quotation-tool-db0tm4
 
 codex/create-product-quotation-tool-nq6b3b
+Codex
 Codex
 Codex
 Codex
@@ -176,6 +193,8 @@ def load_price_catalog(path: str | Path | None = None) -> Dict[str, Dict[str, De
         raw = json.load(handle)
 
     catalog: Dict[str, Dict[str, Decimal]] = {}
+codex/create-product-quotation-tool-nnzhnd
+
 codex/create-product-quotation-tool-k925yv
 
 codex/create-product-quotation-tool-chfqn1
@@ -213,10 +232,13 @@ Codex
 Codex
 Codex
 Codex
+Codex
     for category in raw.get("product_categories", []):
         for subcategory in category.get("subcategories", []):
             for product in subcategory.get("products", []):
                 name = product.get("product_name")
+codex/create-product-quotation-tool-nnzhnd
+
 codex/create-product-quotation-tool-k925yv
 
 codex/create-product-quotation-tool-chfqn1
@@ -224,6 +246,7 @@ codex/create-product-quotation-tool-chfqn1
 codex/create-product-quotation-tool-db0tm4
 
 codex/create-product-quotation-tool-nq6b3b
+Codex
 Codex
 Codex
 Codex
@@ -248,7 +271,10 @@ _PRODUCT_LOOKUP = {
     product.get("product_name"): product for product in _PRODUCTS if product.get("product_name")
 }
 
+codex/create-product-quotation-tool-nnzhnd
+
 codex/create-product-quotation-tool-k925yv
+Codex
 for name, product in _PRODUCT_LOOKUP.items():
     packs = list(_PRICE_CATALOG.get(name, {}).keys())
     if packs:
@@ -281,8 +307,11 @@ class QuoteItem:
         }
 
 
+codex/create-product-quotation-tool-nnzhnd
+
 Codex
 
+Codex
 def find_matching_products(query: str) -> List[dict]:
     """Return catalogue entries whose name contains the query string."""
 
@@ -321,6 +350,11 @@ def quote_row(
     discount = _to_decimal(discount_pct)
     if quantity <= 0:
         raise ValueError("Quantity must be greater than zero")
+codex/create-product-quotation-tool-nnzhnd
+    if not Decimal("0") <= discount <= Decimal("100"):
+        raise ValueError("Discount must be between 0 and 100 percent")
+
+
 codex/create-product-quotation-tool-k925yv
     if not Decimal("0") <= discount <= Decimal("100"):
         raise ValueError("Discount must be between 0 and 100 percent")
@@ -329,6 +363,7 @@ codex/create-product-quotation-tool-k925yv
         raise ValueError("Discount cannot be negative")
 Codex
 
+Codex
     unit_price = pack_prices[pack]
     line_gross = unit_price * quantity
     discount_multiplier = (Decimal("100") - discount) / Decimal("100")
@@ -339,7 +374,10 @@ Codex
     product = _PRODUCT_LOOKUP.get(product_id)
     product_name = product.get("product_name") if product else product_id
 
+codex/create-product-quotation-tool-nnzhnd
+
 codex/create-product-quotation-tool-k925yv
+Codex
     item = QuoteItem(
         product_id=product_id,
         product_name=product_name,
@@ -350,6 +388,8 @@ codex/create-product-quotation-tool-k925yv
         line_net=line_net,
     )
     return item.as_dict()
+
+codex/create-product-quotation-tool-nnzhnd
 
     return {
         "product_id": product_id,
@@ -362,6 +402,7 @@ codex/create-product-quotation-tool-k925yv
     }
 Codex
 
+Codex
 
 def compute_totals(items: Iterable[dict]) -> tuple[Decimal, Decimal, Decimal]:
     """Return subtotal, VAT, and grand total for the supplied rows."""
@@ -380,6 +421,8 @@ __all__ = [
     "load_price_catalog",
     "load_products",
     "quote_row",
+codex/create-product-quotation-tool-nnzhnd
+
 codex/create-product-quotation-tool-k925yv
 
 codex/create-product-quotation-tool-chfqn1
@@ -469,6 +512,7 @@ __all__ = [
     "load_price_catalog",
     "load_products",
     "search_products",
+Codex
 Codex
 Codex
 Codex

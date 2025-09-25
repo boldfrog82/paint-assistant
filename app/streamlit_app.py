@@ -1,3 +1,7 @@
+codex/create-product-quotation-tool-nnzhnd
+"""Minimal Streamlit UI for building customer paint quotations."""
+
+
 codex/create-product-quotation-tool-k925yv
 """Minimal Streamlit UI for building customer paint quotations."""
 
@@ -99,30 +103,40 @@ def compute_totals(items: List[QuoteItem]) -> dict:
 # FILE: app/streamlit_app.py
 # ================================
 Codex
+Codex
 from __future__ import annotations
 
 import io
 from datetime import datetime
 from decimal import Decimal
+codex/create-product-quotation-tool-nnzhnd
+
 codex/create-product-quotation-tool-k925yv
 
 from pathlib import Path
 Codex
+>Codex
 from typing import List
 
 import pandas as pd
 import streamlit as st
+codex/create-product-quotation-tool-nnzhnd
+
 codex/create-product-quotation-tool-k925yv
 
 
 # reportlab imports (top-level, not mid-file)
 Codex
+>Codex
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.pdfgen import canvas
 
 from app.core.quote import (
+codex/create-product-quotation-tool-nnzhnd
+
 codex/create-product-quotation-tool-k925yv
+Codex
     compute_totals,
     find_matching_products,
     format_aed,
@@ -375,6 +389,8 @@ with st.expander("Current quotation", expanded=bool(items)):
             st.rerun()
     else:
         st.caption("Add products to start building a quotation.")
+codex/create-product-quotation-tool-nnzhnd
+
 
     load_products,
     load_prices,
@@ -547,4 +563,5 @@ with st.expander("Current quote", expanded=True):
             st.experimental_rerun()
     else:
         st.caption("Add products to start a quotation.")
+Codex
 Codex
