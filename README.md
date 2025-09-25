@@ -67,3 +67,67 @@ The browser UI lets you:
 - enter quantities and optional discounts for each line item
 - review running subtotals with 5% VAT automatically applied
 - download the current quotation as CSV or export a simple PDF invoice
+
+## Google Colab setup
+
+To explore the quotation tool inside Google Colab, run the following cells in
+order. Replace `YOUR_GITHUB_USERNAME` with the actual account (or organisation)
+that hosts the repository before executing the first command. Leaving the angle
+brackets in place causes the shell to look for a file called
+`YOUR_GITHUB_USERNAME`, which triggers the "No such file or directory"
+message shown in the screenshot.
+
+**Cell 1 – Clone the repository**
+
+```python
+!git clone https://github.com/YOUR_GITHUB_USERNAME/paint-assistant.git
+%cd paint-assistant
+```
+
+If you have not forked the project, substitute the URL of the repository you
+want to work with (for example, your own fork).
+
+**Cell 2 – Install dependencies (plus pyngrok for tunnelling)**
+
+```python
+!pip install -q -r requirements.txt pyngrok
+```
+
+**Cell 3 – (Optional) run tests**
+
+```python
+!pytest
+```
+
+**Cell 4 – Configure Streamlit for Colab**
+
+```python
+import os
+
+os.environ["STREAMLIT_SERVER_HEADLESS"] = "true"
+os.environ["STREAMLIT_SERVER_PORT"] = "8501"
+os.environ["STREAMLIT_SERVER_ADDRESS"] = "0.0.0.0"
+```
+
+**Cell 5 – Launch the Streamlit app**
+
+```python
+!streamlit run app/streamlit_app.py &>/dev/null &
+```
+
+**Cell 6 – Open an ngrok tunnel and display the public URL**
+
+```python
+from pyngrok import ngrok
+
+public_url = ngrok.connect(8501, "http")
+public_url
+```
+
+Visit the returned link to interact with the quotation builder. When you are
+finished, disconnect the tunnel and stop Streamlit:
+
+```python
+ngrok.disconnect(public_url.public_url)
+!killall streamlit
+```
