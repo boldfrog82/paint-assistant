@@ -68,6 +68,18 @@ The browser UI lets you:
 - review running subtotals with 5% VAT automatically applied
 - download the current quotation as CSV or export a simple PDF invoice
 
+## Static HTML quotation builder
+
+If you would rather open the tool as a plain HTML page (without running Streamlit), use the standalone front end in `web/index.html`:
+
+1. Serve the repository directory so the page can load the JSON price lists (browsers block `file://` fetches). From the project root run:
+   ```bash
+   python -m http.server 8000
+   ```
+2. Open <http://localhost:8000/web/index.html> in your browser.
+
+The static page loads the same product catalogue and price list, offers Google-style search suggestions, and lets you pick pack sizes, quantities, and discounts. It calculates subtotals with 5% VAT, supports removing rows, and includes buttons to download the quote as CSV or print/save the page as PDF.
+
 ## Google Colab setup
 
 To explore the quotation tool inside Google Colab, run the following cells in

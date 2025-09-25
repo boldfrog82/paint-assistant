@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paint Quotation Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --accent: #0066cc;
+      --accent-strong: #004999;
+      --border: #d6dce5;
+      --text: #1a1c1f;
+      --muted: #5c6470;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--card);
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto 4rem;
+      padding: 0 1.5rem 3rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 1.75rem;
+      box-shadow: 0 18px 45px -30px rgba(15, 23, 42, 0.35);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.65rem 0.75rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      background: #fff;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.18);
+    }
+
+    textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    button {
+      border: none;
+      border-radius: 999px;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), #0080ff);
+      color: #fff;
+      box-shadow: 0 12px 24px -12px rgba(0, 102, 204, 0.5);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 30px -15px rgba(0, 102, 204, 0.6);
+    }
+
+    .btn-secondary {
+      background: rgba(0, 102, 204, 0.1);
+      color: var(--accent-strong);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    thead {
+      background: rgba(0, 102, 204, 0.08);
+    }
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+    }
+
+    tbody tr:hover {
+      background: rgba(148, 163, 184, 0.12);
+    }
+
+    .empty-state {
+      padding: 1.25rem;
+      background: rgba(0, 102, 204, 0.07);
+      border: 1px dashed rgba(0, 102, 204, 0.4);
+      border-radius: 14px;
+      text-align: center;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .totals {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .totals-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.05rem;
+    }
+
+    .totals-row strong {
+      font-size: 1.2rem;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.1rem 0.45rem;
+      font-size: 0.8rem;
+      background: rgba(0, 102, 204, 0.12);
+      color: var(--accent-strong);
+      border-radius: 999px;
+      margin-left: 0.5rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .description {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 0.35rem;
+    }
+
+    @media (max-width: 680px) {
+      header {
+        padding: 1.25rem;
+      }
+
+      main {
+        padding: 0 1rem 3rem;
+      }
+
+      .card {
+        padding: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Paint Quotation Builder</h1>
+    <p style="margin:0.35rem 0 0;color:var(--muted);max-width:720px;">
+      Search National Paints products, build customer quotations with optional discounts, and export a VAT-inclusive summary.
+    </p>
+  </header>
+
+  <main>
+    <section class="card" aria-labelledby="customer-heading">
+      <h2 id="customer-heading">Customer details</h2>
+      <div class="grid two">
+        <div>
+          <label for="customerName">Name</label>
+          <input id="customerName" type="text" placeholder="e.g. Gulf Construction LLC" />
+        </div>
+        <div>
+          <label for="customerPhone">Phone</label>
+          <input id="customerPhone" type="text" placeholder="e.g. +971 50 123 4567" />
+        </div>
+      </div>
+      <div style="margin-top:1rem;">
+        <label for="customerNotes">Notes</label>
+        <textarea id="customerNotes" placeholder="Delivery instructions, site contact, payment terms..."></textarea>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="builder-heading">
+      <h2 id="builder-heading">Build quotation</h2>
+      <div class="grid two">
+        <div>
+          <label for="productSearch">Product</label>
+          <input id="productSearch" type="text" list="productSuggestions" placeholder="Search by name" autocomplete="off" />
+          <datalist id="productSuggestions"></datalist>
+          <p class="description" id="productDescription"></p>
+        </div>
+        <div>
+          <label for="packSelect">Pack size</label>
+          <select id="packSelect" disabled>
+            <option value="">Select a product first</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid three" style="margin-top:1rem;">
+        <div>
+          <label for="quantityInput">Quantity</label>
+          <input id="quantityInput" type="number" min="1" step="1" value="1" />
+        </div>
+        <div>
+          <label for="discountInput">Discount (%)</label>
+          <input id="discountInput" type="number" min="0" max="100" step="0.5" value="0" />
+        </div>
+        <div>
+          <label for="unitPriceDisplay">Unit price</label>
+          <input id="unitPriceDisplay" type="text" readonly placeholder="Select a pack" />
+        </div>
+      </div>
+      <div class="actions" style="margin-top:1.5rem;">
+        <button class="btn-primary" id="addItemBtn">Add to quote</button>
+        <button class="btn-secondary" id="clearQuoteBtn" type="button">Clear quote</button>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="summary-heading">
+      <div style="display:flex;align-items:center;gap:0.65rem;justify-content:space-between;flex-wrap:wrap;">
+        <h2 id="summary-heading" style="margin-bottom:0;">Quotation summary</h2>
+        <div class="actions" style="margin:0;">
+          <button class="btn-secondary" id="downloadCsvBtn" type="button">Download CSV</button>
+          <button class="btn-secondary" id="printBtn" type="button">Print / Save as PDF</button>
+        </div>
+      </div>
+      <div id="itemsContainer" style="margin-top:1.25rem;"></div>
+      <div class="totals" id="totalsPanel" style="display:none;">
+        <div class="totals-row"><span>Subtotal</span><span id="subtotalValue"></span></div>
+        <div class="totals-row"><span>VAT (5%)</span><span id="vatValue"></span></div>
+        <div class="totals-row"><strong>Total</strong><strong id="totalValue"></strong></div>
+      </div>
+    </section>
+  </main>
+
+  <template id="tableTemplate">
+    <div>
+      <table aria-describedby="summary-heading">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Pack</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Unit price</th>
+            <th scope="col">Discount %</th>
+            <th scope="col">Line total</th>
+            <th scope="col"><span class="sr-only">Actions</span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </template>
+
+  <template id="emptyTemplate">
+    <div class="empty-state">
+      Start adding products to build a quotation. Suggestions appear as you type, similar to a search engine auto-complete.
+    </div>
+  </template>
+
+  <script>
+    const AED = new Intl.NumberFormat('en-AE', { style: 'currency', currency: 'AED' });
+    const VAT_RATE = 0.05;
+
+    const productSearch = document.getElementById('productSearch');
+    const packSelect = document.getElementById('packSelect');
+    const descriptionEl = document.getElementById('productDescription');
+    const quantityInput = document.getElementById('quantityInput');
+    const discountInput = document.getElementById('discountInput');
+    const unitPriceDisplay = document.getElementById('unitPriceDisplay');
+    const addItemBtn = document.getElementById('addItemBtn');
+    const clearQuoteBtn = document.getElementById('clearQuoteBtn');
+    const downloadCsvBtn = document.getElementById('downloadCsvBtn');
+    const printBtn = document.getElementById('printBtn');
+    const suggestionsList = document.getElementById('productSuggestions');
+    const itemsContainer = document.getElementById('itemsContainer');
+    const totalsPanel = document.getElementById('totalsPanel');
+    const subtotalValue = document.getElementById('subtotalValue');
+    const vatValue = document.getElementById('vatValue');
+    const totalValue = document.getElementById('totalValue');
+
+    const quoteItems = [];
+    let products = [];
+
+    function normalise(str) {
+      return (str || '').toString().trim().toLowerCase();
+    }
+
+    function filterProducts(term) {
+      const query = normalise(term);
+      if (!query) {
+        return products.slice(0, 15);
+      }
+      return products
+        .filter(p => normalise(p.name).includes(query) || normalise(p.code).includes(query))
+        .slice(0, 15);
+    }
+
+    function populateSuggestions(term) {
+      const matches = filterProducts(term);
+      suggestionsList.innerHTML = '';
+      matches.forEach(match => {
+        const option = document.createElement('option');
+        option.value = match.name;
+        option.label = match.code ? `${match.name} (${match.code})` : match.name;
+        suggestionsList.appendChild(option);
+      });
+    }
+
+    function selectProductByName(name) {
+      const match = products.find(p => normalise(p.name) === normalise(name));
+      return match || null;
+    }
+
+    function formatNumber(value) {
+      return Number.parseFloat(value || 0);
+    }
+
+    function computeLineTotal(unitPrice, quantity, discountPct) {
+      const price = formatNumber(unitPrice);
+      const qty = Math.max(1, Math.floor(formatNumber(quantity)) || 1);
+      const discount = Math.min(100, Math.max(0, formatNumber(discountPct)));
+      const gross = price * qty;
+      const net = gross * (1 - discount / 100);
+      return {
+        qty,
+        discount,
+        unitPrice: price,
+        lineTotal: Math.round(net * 100) / 100,
+      };
+    }
+
+    function refreshPackOptions(product) {
+      packSelect.innerHTML = '';
+      if (!product) {
+        packSelect.disabled = true;
+        const option = document.createElement('option');
+        option.value = '';
+        option.textContent = 'Select a product first';
+        packSelect.appendChild(option);
+        unitPriceDisplay.value = '';
+        descriptionEl.textContent = '';
+        return;
+      }
+
+      descriptionEl.textContent = product.description || '';
+
+      product.packs.forEach(pack => {
+        const option = document.createElement('option');
+        option.value = pack.size;
+        option.textContent = `${pack.size} — ${AED.format(pack.price)}`;
+        packSelect.appendChild(option);
+      });
+
+      packSelect.disabled = false;
+      packSelect.selectedIndex = 0;
+      updateUnitPrice(product);
+    }
+
+    function updateUnitPrice(product) {
+      const selectedSize = packSelect.value;
+      const pack = product ? product.packs.find(p => p.size === selectedSize) : null;
+      unitPriceDisplay.value = pack ? AED.format(pack.price) : '';
+    }
+
+    function renderItems() {
+      itemsContainer.innerHTML = '';
+      if (!quoteItems.length) {
+        const empty = document.getElementById('emptyTemplate').content.cloneNode(true);
+        itemsContainer.appendChild(empty);
+        totalsPanel.style.display = 'none';
+        return;
+      }
+
+      const table = document.getElementById('tableTemplate').content.cloneNode(true);
+      const tbody = table.querySelector('tbody');
+
+      quoteItems.forEach((item, index) => {
+        const row = document.createElement('tr');
+
+        const productCell = document.createElement('td');
+        productCell.innerHTML = `<strong>${item.product}</strong><br><span style="color:var(--muted);font-size:0.85rem;">${item.code || ''}</span>`;
+        row.appendChild(productCell);
+
+        const packCell = document.createElement('td');
+        packCell.textContent = item.pack;
+        row.appendChild(packCell);
+
+        const qtyCell = document.createElement('td');
+        qtyCell.textContent = item.quantity;
+        row.appendChild(qtyCell);
+
+        const unitPriceCell = document.createElement('td');
+        unitPriceCell.textContent = AED.format(item.unitPrice);
+        row.appendChild(unitPriceCell);
+
+        const discountCell = document.createElement('td');
+        discountCell.textContent = `${item.discount.toFixed(2)}%`;
+        row.appendChild(discountCell);
+
+        const lineTotalCell = document.createElement('td');
+        lineTotalCell.textContent = AED.format(item.lineTotal);
+        row.appendChild(lineTotalCell);
+
+        const actionsCell = document.createElement('td');
+        actionsCell.style.textAlign = 'right';
+        const removeBtn = document.createElement('button');
+        removeBtn.type = 'button';
+        removeBtn.className = 'btn-secondary';
+        removeBtn.style.padding = '0.45rem 0.8rem';
+        removeBtn.textContent = 'Remove';
+        removeBtn.addEventListener('click', () => {
+          quoteItems.splice(index, 1);
+          renderItems();
+        });
+        actionsCell.appendChild(removeBtn);
+        row.appendChild(actionsCell);
+
+        tbody.appendChild(row);
+      });
+
+      itemsContainer.appendChild(table);
+      updateTotals();
+    }
+
+    function updateTotals() {
+      let subtotal = 0;
+      quoteItems.forEach(item => {
+        subtotal += item.lineTotal;
+      });
+      subtotal = Math.round(subtotal * 100) / 100;
+      const vat = Math.round(subtotal * VAT_RATE * 100) / 100;
+      const total = Math.round((subtotal + vat) * 100) / 100;
+
+      subtotalValue.textContent = AED.format(subtotal);
+      vatValue.textContent = AED.format(vat);
+      totalValue.textContent = AED.format(total);
+      totalsPanel.style.display = 'flex';
+    }
+
+    function addCurrentItem() {
+      const selectedProduct = selectProductByName(productSearch.value);
+      if (!selectedProduct) {
+        alert('Select a product from the list first.');
+        productSearch.focus();
+        return;
+      }
+      if (!packSelect.value) {
+        alert('Choose a pack size before adding to the quote.');
+        packSelect.focus();
+        return;
+      }
+
+      const pack = selectedProduct.packs.find(p => p.size === packSelect.value);
+      if (!pack) {
+        alert('The selected pack is no longer available. Please pick another.');
+        return;
+      }
+
+      const { qty, discount, unitPrice, lineTotal } = computeLineTotal(
+        pack.price,
+        quantityInput.value,
+        discountInput.value
+      );
+
+      quoteItems.push({
+        product: selectedProduct.name,
+        code: selectedProduct.code,
+        pack: pack.size,
+        quantity: qty,
+        discount,
+        unitPrice,
+        lineTotal
+      });
+
+      renderItems();
+      quantityInput.value = '1';
+      discountInput.value = '0';
+      quantityInput.focus();
+    }
+
+    function clearQuote() {
+      quoteItems.splice(0, quoteItems.length);
+      renderItems();
+    }
+
+    function downloadCsv() {
+      if (!quoteItems.length) {
+        alert('Add at least one product before downloading.');
+        return;
+      }
+
+      const headers = ['Product', 'Code', 'Pack', 'Quantity', 'Unit Price', 'Discount %', 'Line Total'];
+      const rows = quoteItems.map(item => [
+        `"${item.product.replace(/"/g, '""')}"`,
+        item.code ? `"${item.code.replace(/"/g, '""')}"` : '',
+        `"${item.pack.replace(/"/g, '""')}"`,
+        item.quantity,
+        item.unitPrice.toFixed(2),
+        item.discount.toFixed(2),
+        item.lineTotal.toFixed(2)
+      ].join(','));
+
+      const subtotal = quoteItems.reduce((sum, item) => sum + item.lineTotal, 0);
+      const vat = subtotal * VAT_RATE;
+      const total = subtotal + vat;
+
+      const csvContent = [
+        headers.join(','),
+        ...rows,
+        '',
+        ['', '', '', '', '', 'Subtotal', subtotal.toFixed(2)].join(','),
+        ['', '', '', '', '', 'VAT 5%', vat.toFixed(2)].join(','),
+        ['', '', '', '', '', 'Total', total.toFixed(2)].join(',')
+      ].join('\n');
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'quotation.csv';
+      link.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function preparePrintView() {
+      if (!quoteItems.length) {
+        alert('Add at least one product before printing.');
+        return;
+      }
+      window.print();
+    }
+
+    async function loadData() {
+      const [pricesResponse, productsResponse] = await Promise.all([
+        fetch('../data/pricelistnationalpaints.json'),
+        fetch('../data/paint_products.json')
+      ]);
+
+      if (!pricesResponse.ok) {
+        throw new Error('Unable to load price list.');
+      }
+
+      const priceJson = await pricesResponse.json();
+      const catalogueJson = productsResponse.ok ? await productsResponse.json() : [];
+
+      const descriptionLookup = new Map();
+      if (Array.isArray(catalogueJson)) {
+        catalogueJson.flat().forEach(entry => {
+          if (entry && entry.product_name) {
+            descriptionLookup.set(normalise(entry.product_name), entry.description || '');
+          }
+        });
+      }
+
+      const productAccumulator = [];
+      if (priceJson && Array.isArray(priceJson.product_categories)) {
+        priceJson.product_categories.forEach(category => {
+          category.subcategories?.forEach(sub => {
+            sub.products?.forEach(prod => {
+              const packs = Array.isArray(prod.prices)
+                ? prod.prices
+                    .filter(p => p && p.size && typeof p.price !== 'undefined')
+                    .map(p => ({ size: p.size, price: Number(p.price) }))
+                : [];
+              if (!packs.length) {
+                return;
+              }
+              productAccumulator.push({
+                name: prod.product_name,
+                code: prod.product_code,
+                packs,
+                description: descriptionLookup.get(normalise(prod.product_name)) || ''
+              });
+            });
+          });
+        });
+      }
+
+      products = productAccumulator.sort((a, b) => a.name.localeCompare(b.name));
+      populateSuggestions('');
+      renderItems();
+    }
+
+    productSearch.addEventListener('input', event => {
+      populateSuggestions(event.target.value);
+      const match = selectProductByName(event.target.value);
+      refreshPackOptions(match);
+    });
+
+    productSearch.addEventListener('change', event => {
+      const match = selectProductByName(event.target.value);
+      refreshPackOptions(match);
+    });
+
+    packSelect.addEventListener('change', () => {
+      const match = selectProductByName(productSearch.value);
+      updateUnitPrice(match);
+    });
+
+    addItemBtn.addEventListener('click', event => {
+      event.preventDefault();
+      addCurrentItem();
+    });
+
+    clearQuoteBtn.addEventListener('click', event => {
+      event.preventDefault();
+      clearQuote();
+    });
+
+    downloadCsvBtn.addEventListener('click', event => {
+      event.preventDefault();
+      downloadCsv();
+    });
+
+    printBtn.addEventListener('click', event => {
+      event.preventDefault();
+      preparePrintView();
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadData().catch(err => {
+        itemsContainer.innerHTML = '';
+        const message = document.createElement('div');
+        message.className = 'empty-state';
+        message.style.borderStyle = 'solid';
+        message.textContent = `Unable to load data files. ${err.message}`;
+        itemsContainer.appendChild(message);
+      });
+    });
+  </script>
+</body>
+</html>
