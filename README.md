@@ -126,14 +126,18 @@ os.environ["STREAMLIT_SERVER_ADDRESS"] = "0.0.0.0"
 from getpass import getpass
 from pyngrok import ngrok
 
-authtoken = getpass("Paste your ngrok authtoken (visit dashboard.ngrok.com to generate one): ").strip()
+authtoken = getpass("Paste only your ngrok authtoken (visit dashboard.ngrok.com to generate one): ").strip()
 if authtoken:
+    if authtoken.startswith("http"):
+        raise ValueError("The ngrok authtoken is a short string (no https://). Copy just the token shown on your dashboard.")
     ngrok.set_auth_token(authtoken)
 ```
 
 You must sign up for a free ngrok account and supply the personal authtoken
-displayed at <https://dashboard.ngrok.com/get-started/your-authtoken>. Without
-it, ngrok returns the `ERR_NGROK_4018` authentication error shown in Colab.
+displayed at <https://dashboard.ngrok.com/get-started/your-authtoken>. Copy just
+the token characters—pasting the entire URL causes ngrok to raise
+`ERR_NGROK_105` because the value does not look like a valid authtoken. Without
+any token, ngrok returns the `ERR_NGROK_4018` authentication error shown in Colab.
 
 **Cell 7 – Open an ngrok tunnel and display the public URL**
 
