@@ -2,10 +2,15 @@
 
 from __future__ import annotations
 
-from typing import Any, Dict
+from typing import Any, Dict, List
 
 from ..data.products import find_product_by_name, summarize_product
-from ..data.prices import get_product_by_code, list_available_sizes, lookup_price
+from ..data.prices import (
+    get_currency,
+    get_product_by_code,
+    list_available_sizes,
+    lookup_price,
+)
 
 
 def price_lookup_tool(code: str, size: str) -> Dict[str, Any]:
@@ -14,6 +19,12 @@ def price_lookup_tool(code: str, size: str) -> Dict[str, Any]:
     cleaned_code = code.strip()
     cleaned_size = size.strip()
 
+    missing_fields: List[str] = []
+    if not cleaned_code:
+        missing_fields.append("code")
+    if not cleaned_size:
+        missing_fields.append("size")
+
     payload: Dict[str, Any] = {
         "tool": "price_lookup",
         "requested_code": cleaned_code,
@@ -21,8 +32,15 @@ def price_lookup_tool(code: str, size: str) -> Dict[str, Any]:
         "found": False,
     }
 
+    if "code" in missing_fields:
+        payload["currency"] = get_currency()
+        payload["missing_fields"] = missing_fields
+        return payload
+
     product, price_entry, currency = lookup_price(cleaned_code, cleaned_size)
     payload["currency"] = currency
+    if missing_fields:
+        payload["missing_fields"] = missing_fields
 
     if product:
         payload["product_name"] = product.get("product_name")
